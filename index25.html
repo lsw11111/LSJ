@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>링크선택자</title>
+    <style>
+#content a::after{
+    content: ' - ' attr(href);
+}
+#content a {
+    text-decoration: none;
+}
+#content li:not(.fa) {
+    background-color: red;
+}
+    </style>
+</head>
+<body>
+    <div id="warp">
+<div id="header">
+
+</div>
+<div id="content">
+<ul>
+    <li><a href="http://www.google.com" target="blank">구글</a></li>
+    <li class="fa"><a href="http://www.google.com" target="blank">구글</a></li>
+    <li><a href="http://www.google.com" target="blank">구글</a></li>
+    <li><a href="http://www.google.com" target="blank">구글</a></li>
+</ul>
+
+</div>
+
+
+
+
+    </div>
+
+</body>
+</html>
