@@ -3,101 +3,124 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>하이서울브랜드</title>
     <style>
-        #header,
-        #content,
-        #footer {
+        #header, #content, #footer {
             width: 1000px;
-            margin: 0 auto;
             overflow: hidden;
+            margin: 0 auto;
         }
-
-        #header .left_space,
-        #content .left_space,
-        #footer .left_space {
+        #header .header_left, #footer .footer_right {
+            background-color:darkgrey;
+            border-radius: 30px 0 30px 0px;
             width: 150px;
             height: 150px;
+            border: 1px solid black;
             float: left;
-            background-color: gray;
-            border: 1px solid black;
         }
-
-        #header .right_space,
-        #content .right_space,
-        #footer .right_space {
-            width: 150px;
-            height: 150px;
-            float: right;
-            background-color: gray;
-            border: 1px solid black;
-        }
-
-        #header .center_space,
-        #content .center_space,
-        #footer .center_space {
+        #header .header_center  {
             width: 694px;
             height: 150px;
+            background-color:darkgrey;
             float: left;
-            background-color: gray;
             border: 1px solid black;
+            border-radius: 0 0 30px 30px;
 
         }
+        #footer .footer_center {
+            width: 694px;
+            height: 150px;
+            background-color:darkgrey;
+            float: left;
+            border: 1px solid black;
+            border-radius: 30px 30px 0 0;
+        }
+        #content .content_center {
+            width: 694px;
+            height: 300px;
+            float: left;
+            background-color: darkgrey;
+            border: 1px solid black;
+            border-radius: 30px 30px 30px 30px;
+            font-weight: normal;
+        }
 
-        #content .left_space {
+        
+        #header .header_right, #footer .footer_left {
+            background-color:darkgrey;
+            border-radius: 0px 30px 0px 30px;
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            float: left;
+        }
+        #content .content_left {
+            width: 150px;
+            height: 300px;
+            border: 1px solid black;
+            float: left;
+            background-color: darkgrey;
             border-radius: 0 30px 30px 0;
-            height: 300px;
+
         }
-        #content .center_space {
-            border-radius: 30px;
+        #content .content_right {
+            width: 150px;
             height: 300px;
+            border: 1px solid black;
+            float: left;
+            background-color: darkgrey;
+            border-radius: 30px 0px 0px 30px;
+
         }
-        #content .center_space ul li {
+        #content .content_center ul li {
+            font-weight: bold;
             list-style: none;
             float: left;
             padding: 0 40px;
-            font-weight: bold;
             font-size: 20px;
         }
-        #content .seoul {
+        #content .content_center .hiseoul {
             clear: both;
-            padding: 10px;
+            padding: 10px
         }
-        #content .right_space {
-            border-radius: 30px;
-            height: 300px;
-        }
+        
     </style>
 </head>
 
 <body>
     <div id="header">
-        <div class="left_space"></div>
-        <div class="center_space"></div>
-        <div class="right_space"></div>
+        <div class="header_left"></div>
+        <div class="header_center"></div>
+        <div class="header_right"></div>
     </div>
+
     <div id="content">
-        <div class="left_space"></div>
-        <div class="center_space">
-            <div class="seoul">>
-                <ul>
-                    <li>menu1</li>
-                    <li>menu2</li>
-                    <li>menu3</li>
-                    <li>menu4</li>
-                </ul>
-                <h1>하이서울브랜드</h1>
-                <p>서울 내용</p>
+        <div class="content_left"></div>
+        <div class="content_center">
+            <div class="menu">
+            <ul>
+                <li>menu1</li>
+                <li>menu2</li>
+                <li>menu3</li>
+                <li>menu4</li>
             </div>
-        <div class="right_space"></div>
+                <div class="hiseoul"><h1>하이서울브랜드</h1>
+                <p>서울시와 서울산업진흥원(SBA)이 공동으로 지원하는 하이 서울브랜드 사업은 우수한 기술력과 상품력을 보유하고 있으나 고유브랜드 육성에 어려움을 겪고 있는 우수기업들이 서울시가 인정한 중소기업 공동브랜드인 하이서울브랜드를 활용하여 제품 경쟁력을 강화할 수 있도록 각종 홍보 마케팅을 지원하는 사업입니다.</p>
+            </div>
+
+            </ul>
         </div>
-    <div>
-        <div id="footer">
-            <div class="left_space"></div>
-            <div class="center_space"></div>
-            <div class="right_space"></div>
-        </div>
+        <div class="content_right"></div>
     </div>
+
+    <div id="footer">
+        <div class="footer_left"></div>
+        <div class="footer_center"></div>
+        <div class="footer_right"></div>
+    </div>
+
+
+
 </body>
 
 </html>
