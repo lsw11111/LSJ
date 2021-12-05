@@ -1,10 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>웹폰트</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Corinthia&family=Meow+Script&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0 auto;
+            padding: 0 auto;
+            vertical-align: baseline;
+        }
+
+        #header {
+            width: 1200px;
+            height: 80px;
+            border: 1px solid darkgray;
+            margin: 0 auto;
+
+        }
+
+        #header .gnb ul {
+            overflow: hidden;
+            margin: 0 auto;
+            width: 1200px;
+        }
+        
+        #header .gnb ul li {
+            width: 50px;
+            height: 25px;
+            float: left;
+            list-style: none;
+            border: 1px solid darkgray;
+            text-align: center;
+            margin: 0 auto;
+            line-height: 25px;
+        }
+        #header .gnb ul li a{
+            text-decoration: none;
+            padding: 5px;
+        }
+        #header .lnb ul {
+            overflow: hidden;
+            margin: 0 auto;
+
+        }
+
+        #header .lnb ul li {
+            width: 50px;
+            height: 25px;
+            float: right;
+            list-style: none;
+            border: 1px solid darkgray;
+            text-align: center;
+            line-height: 25px;
+        }
+        #header .lnb ul li a{
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        #section {
+            width: 1200px;
+            height: 300px;
+            margin: 0 auto;
+            border: 1px solid darkgray;
+            overflow: hidden;
+        }
+        #section .content {
+            width: 800px;
+            height: 300px;
+            border: 1px solid darkgray;
+            float: left;
+        }
+        #section .banner {
+            width: 396px;
+            height: 300px;
+            border: 1px solid darkgray;
+            margin: 0 auto;
+            float: right;
+
+        }
+        #section .content p {
+            margin: 5px;
+            font-family: 'Meow Script';
+            font-size: 20px;
+        }
+        #section .banner p {
+            margin: 5px;
+            font-family: 'Meow Script';
+            font-size: 20px;
+            font-family: 'Roboto Mono', monospace;
+        }
+        
+        #footer {
+            margin: 0 auto;
+            width: 1200px;
+            height: 100px;
+            border: 1px solid darkgray;
+            line-height: 100px;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div id="header">
+
+        <div class="gnb">
+            <ul>
+                <li><a href="#">gnb1</a></li>
+                <li><a href="#">gnb2</a></li>
+                <li><a href="#">gnb3</a></li>
+                <li><a href="#">gnb4</a></li>
+                <li><a href="#">gnb5</a></li>
+            </ul>
+        </div>
+        <div class="lnb">
+            <ul>
+                <li><a href="#">lnb5</a></li>
+                <li><a href="#">lnb4</a></li>
+                <li><a href="#">lnb3</a></li>
+                <li><a href="#">lnb2</a></li>
+                <li><a href="#">lnb1</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="section">
+        <div class="content">
+            <p>Start your exploration of the 17 themes by clicking one of the thumbnails below, or use the search
+                engine to browse through our larger-than-life image database.</p>
+        </div>
+        <div class="banner">
+            <p>Start your exploration of the 17 themes by clicking one of the thumbnails below, or use the search
+                engine to browse through our larger-than-life image database.</p>
+        </div>
+    </div>
+    <div id="footer">office information</div>
+
 </body>
+
 </html>
