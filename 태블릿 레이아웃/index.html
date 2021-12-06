@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태블릿 레이아웃</title>
+</head>
+<style>
+    * {
+        margin: 0 auto;
+        padding: 0%;
+    }
+
+    body {
+        min-width: 1000px;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    #header {
+        width: 100%;
+        background-color: rgb(114, 4, 169);
+    }
+
+    #header p {
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        padding: 30px;
+    }
+
+    #header_gnb {
+        height: 50px;
+        background-color: rgba(95, 95, 95, 0.679);
+    }
+
+    #header_gnb ul {
+        overflow: hidden;
+    }
+
+    #header_gnb ul li {
+        float: left;
+        color: #000;
+        border-right: 1px solid darkgray;
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    #header_gnb ul:nth-child(1) {
+        float: left;
+    }
+
+    #header_gnb ul:nth-child(2) {
+        float: right;
+    }
+
+    #header_gnb ul:nth-child(2) li:first-child {
+        border-left: 1px solid darkgray;
+    }
+
+    #header_gnb ul li a {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        display: block;
+    }
+
+    #wrap {
+        background-color: rgb(255, 230, 37);
+        overflow: hidden;
+
+    }
+
+    #wrap #lnb {
+        float: left;
+        width: 250px;
+    }
+
+    #wrap #lnb ul li {
+        padding-left: 5px;
+        border-bottom: 1px dashed darkgray;
+        padding-left: 20px;
+    }
+
+    #wrap #lnb ul li a {
+        display: block;
+        padding: 5px 20px;
+        color: #000;
+    }
+
+    #wrap #content_wrap {
+        background-color: rgb(240, 175, 10);
+        float: left;
+        width: 100%;
+        padding-left: 10px;
+        margin-right: -260px;
+        
+    }
+    #wrap #content_wrap #content {
+        padding-right: 260px;
+    }
+    #wrap #content_wrap #content div{
+        margin-bottom: 40px;
+        float: left;
+    }
+    #wrap #content_wrap #content div:nth-child(1) img {
+        float: left;
+        padding-right: 20px;
+
+    }
+    #wrap #content_wrap #content div:nth-child(2) img {
+        float: right;
+        padding-right: 20px;
+
+    }
+    #wrap #content_wrap #content div p::first-line {
+        font-size: 1.5em;
+        color: rgb(255, 0, 0);
+           
+
+    }
+    #wrap #content_wrap #content div p::first-letter {
+        font-size: 2em;
+           
+
+    }
+    #wrap #content_wrap #content div:nth-child(4) {
+        border-top: 1px dashed darkgray;
+        border-bottom: 1px dashed darkgray;
+            }
+    #wrap #content_wrap #content div:nth-child(4) ul{
+        overflow: hidden;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+    #wrap #content_wrap #content div:nth-child(4) ul li{
+        float: left;
+    }
+    #wrap #content_wrap #content div:nth-child(4) ul li:nth-child(1){
+        width: 150px; margin: 5px;
+    }
+    #wrap #content_wrap #content div:nth-child(4) ul li:nth-child(2){
+        width: 150px; margin: 5px;
+    }#wrap #content_wrap #content div:nth-child(4) ul li:nth-child(3){
+        width: 150px; margin: 5px;
+    }
+    #wrap #content_wrap #content div:nth-child(4) ul li:nth-child(4){
+        width: 100%;
+        margin-right: -480px;
+    }
+    #wrap #content_wrap #content div:nth-child(4) ul li:nth-child(4) p{
+        padding-left: 10px;
+        padding-right: 480px;
+    }
+    #footer {
+        height: 100px;
+        background-color: rgb(187, 187, 187);
+        border-top: 1px solid darkgray;
+        text-align: center;
+        line-height: 100px;
+
+
+    }
+    </style>
+
+<body>
+    <div id="header">
+        <p>Web Site for Tablet PC</p>
+    </div>
+    <div id="header_gnb">
+        <ul>
+            <li><a href="#">btn1</a></li>
+            <li><a href="#">btn2</a></li>
+            <li><a href="#">btn3</a></li>
+            <li><a href="#">btn4</a></li>
+            <li><a href="#">btn5</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">btn6</a></li>
+            <li><a href="#">btn7</a></li>
+        </ul>
+    </div>
+    </div>
+    <div id="section">
+        <div id="wrap">
+            <div id="lnb">
+                <ul>
+                    <li><a href="#">btn1</a></li>
+                    <li><a href="#">btn2</a></li>
+                    <li><a href="#">btn3</a></li>
+                    <li><a href="#">btn4</a></li>
+                    <li><a href="#">btn5</a></li>
+                    <li><a href="#">btn6</a></li>
+                    <li><a href="#">btn7</a></li>
+                    <li><a href="#">btn8</a></li>
+                    <li><a href="#">btn9</a></li>
+                </ul>
+            </div>
+
+
+            <div id="content_wrap">
+                <div id="content">
+                    <div>
+                        <h1>SEOUL ANIMATION CENTER</h1>
+                        <img src="/img/img_02_1.jpg" alt="이미지">
+                        <p>Operation of a comprehensive support center for the animation for an integrated support and
+                            development to raise the cartoon animation industry of Seoul. Operation of a comprehensive
+                            support
+                            center for the animation for an integrated support and development to raise the cartoon
+                            animation
+                            industry of Seoul. Operation of a comprehensive support center for the animation for an
+                            integrated
+                            support and development to raise the cartoon animation industry of Seoul. Operation of a
+                            comprehensive support center for the animation for an integrated support and development to
+                            raise
+                            the cartoon animation industry of Seoul. Operation of a comprehensive support center for the
+                            animation for an integrated support and development to raise the cartoon animation industry
+                            of
+                            Seoul. Operation of a comprehensive support center for the animation for an integrated
+                            support
+                            and
+                            development to raise the cartoon animation industry of Seoul. Operation of a comprehensive
+                            support
+                            center for the animation for an integrated support and development to raise the cartoon
+                            animation
+                            industry of Seoul. Operation of a comprehensive support center for the animation for an
+                            integrated
+                            support and development to raise the cartoon animation industry of Seoul. Operation of a
+                            comprehensive support center for the animation for an integrated support and development to
+                            raise
+                            the cartoon animation industry of Seoul.</p>
+                    </div>
+
+                    <div>
+                        <h1>SEOUL ANIMATION CENTER</h1>
+                        <img src="/img/img_02_1.jpg" alt="이미지">
+                        <p>Operation of a comprehensive support center for the animation for an integrated support and
+                            development to raise the cartoon animation industry of Seoul. Operation of a comprehensive
+                            support
+                            center for the animation for an integrated support and development to raise the cartoon
+                            animation
+                            industry of Seoul. Operation of a comprehensive support center for the animation for an
+                            integrated
+                            support and development to raise the cartoon animation industry of Seoul. Operation of a
+                            comprehensive support center for the animation for an integrated support and development to
+                            raise
+                            the cartoon animation industry of Seoul. Operation of a comprehensive support center for the
+                            animation for an integrated support and development to raise the cartoon animation industry
+                            of
+                            Seoul. Operation of a comprehensive support center for the animation for an integrated
+                            support
+                            and
+                            development to raise the cartoon animation industry of Seoul. Operation of a comprehensive
+                            support
+                            center for the animation for an integrated support and development to raise the cartoon
+                            animation
+                            industry of Seoul. Operation of a comprehensive support center for the animation for an
+                            integrated
+                            support and development to raise the cartoon animation industry of Seoul. Operation of a
+                            comprehensive support center for the animation for an integrated support and development to
+                            raise
+                            the cartoon animation industry of Seoul.</p>
+                    </div>
+                    <div>
+                        <h1>SEOUL ANIMATION CENTER</h1>
+                        <img src="/img/img_02_1.jpg" alt="이미지">
+                        <p>Operation of a comprehensive support center for the animation for an integrated support and
+                            development to raise the cartoon animation industry of Seoul. Operation of a comprehensive
+                            support
+                            center for the animation for an integrated support and development to raise the cartoon
+                            animation
+                            industry of Seoul. Operation of a comprehensive support center for the animation for an
+                            integrated
+                            support and development to raise the cartoon animation industry of Seoul. Operation of a
+                            comprehensive support center for the animation for an integrated support and development to
+                            raise
+                            the cartoon animation industry of Seoul. Operation of a comprehensive support center for the
+                            animation for an integrated support and development to raise the cartoon animation industry
+                            of
+                            Seoul. Operation of a comprehensive support center for the animation for an integrated
+                            support
+                            and
+                            development to raise the cartoon animation industry of Seoul. Operation of a comprehensive
+                            support
+                            center for the animation for an integrated support and development to raise the cartoon
+                            animation
+                            industry of Seoul. Operation of a comprehensive support center for the animation for an
+                            integrated
+                            support and development to raise the cartoon animation industry of Seoul. Operation of a
+                            comprehensive support center for the animation for an integrated support and development to
+                            raise
+                            the cartoon animation industry of Seoul.</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="#"><img src="/img/bn01.png" alt=""></a></li>
+                            <li><a href="#"><img src="/img/bn02.png" alt=""></a></li>
+                            <li><a href="#"><img src="/img/bn03.png" alt=""></a></li>
+                            <li><p>Operation of a comprehensive support center for the animation for an integrated support and development to raise the cartoon animation industry of Seoul. Operation of a comprehensive support center for the animation for an integrated support and development to raise the cartoon animation industry of Seoul.</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="footer">
+        copyright
+    </div>
+
+
+</body>
+
+</html>
