@@ -1,13 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>view point</title>
+    <title>스마트폰 레이아웃</title>
 </head>
+<style>
+    * {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    #header {
+        height: 45px;
+        background: url(/img/bg_header.png);
+        line-height: 45px;
+        text-align: center;
+        position: relative;
+    }
+
+    #header>a,
+    #header label {
+        display: block;
+        height: 32px;
+        position: absolute;
+    }
+
+    #header>.left {
+        left: 10px;
+        width: 80px;
+        top: 7px;
+        position: absolute;
+    }
+
+    #header>h1 {
+        color: rgb(255, 255, 255);
+    }
+
+    #header>.right {
+        right: 0px;
+        width: 80px;
+        top: 7px;
+        position: absolute;
+    }
+
+    #toggle {
+        display: none;
+    }
+
+    #gnb_wrap {
+        display: none;
+        border: 10px solid darkgray;
+    }
+
+    #toggle:checked~#wrap>#gnb_wrap {
+        display: block;
+
+    }
+
+    .gnb ul {
+        overflow: hidden;
+    }
+
+    .gnb ul li {
+        float: left;
+        padding: 0;
+        padding-right: 40px;
+        margin: 10px 20px;
+        text-align: center;
+        border: 1px solid darkgray;
+
+    }
+
+    .gnb ul li a {
+        color: #000;
+
+    }
+
+    #lnb_wrap {
+        margin: 0 auto;
+
+    }
+
+    #lnb_wrap .lnb {
+        background-color: rgb(0, 103, 111);
+
+    }
+
+    #lnb_wrap .lnb ul {
+        overflow: hidden;
+    }
+
+    #lnb_wrap .lnb ul li {
+        width: 20%;
+        height: 60px;
+        float: left;
+        border: 1px solid darkgray;
+        box-sizing: border-box;
+        text-align: center;
+        line-height: 60px;
+        font-weight: bold;
+
+    }
+
+    #lnb_wrap .lnb ul li a {
+        color: rgb(255, 255, 255);
+
+    }
+
+    #section {
+        padding: 10px;
+    }
+
+    #section p {
+        color: rgb(0, 183, 255);
+        font-weight: bold;
+        font-size: 0.9em;
+
+    }
+
+    #section #section_body {
+        background-image: url(/img/visual14.jpg);
+        background-repeat: no-repeat;
+        margin-top: 15px;
+        font-size: 0.9em;
+    }
+
+    #footer {
+        padding: 10px;
+    }
+
+    #footer .logo {
+        border-top: 1px solid darkgray;
+        border-bottom: 1px solid black;
+        text-align: center;
+        padding: 10px 0;
+    }
+    #footer .info {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 10px;
+    }
+    #footer .address {
+        text-align: center;
+        font-size: 0.9em;
+    }
+</style>
+
 <body>
-    
-    
+    <input id="toggle" type="checkbox">
+    <div id="wrap">
+        <div id="header">
+            <a href="#" class="left"><img src="img/category.png" alt="카테고리"></a>
+            <h1>Mobile</h1>
+            <label for="toggle" class="right" onclick=""><img src="/img/menu.png" alt="메뉴"></label>
+        </div>
+
+        <div id="gnb_wrap">
+            <div class="gnb">
+                <ul>
+                    <li><a href="#">gnb1</a></li>
+                    <li><a href="#">gnb2</a></li>
+                    <li><a href="#">gnb3</a></li>
+                    <li><a href="#">gnb4</a></li>
+                    <li><a href="#">gnb5</a></li>
+                    <li><a href="#">gnb6</a> </li>
+                    <li><a href="#">gnb7</a></li>
+                    <li><a href="#">gnb8</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="lnb_wrap">
+            <div class="lnb">
+                <ul>
+                    <li><a href="#">lnb1</a></li>
+                    <li><a href="#">lnb2</a></li>
+                    <li><a href="#">lnb3</a></li>
+                    <li><a href="#">lnb4</a></li>
+                    <li><a href="#">lnb5</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="section">
+        <div id="section_header">
+            <h1>하이서울브랜드</h1>
+            <hr>
+            <p>서울시가 인정한 최고의 공동브랜드 하이서울브랜드!</p>
+            <p>서울을 대표하는 믿을 수 있는 우수기업브랜드 하이서울이 있습니다.</p>
+        </div>
+
+        <div id="section_body">서울시와 서울산업진흥원(SBA)이 공동으로 지원하는 하이 서울브랜드 사업은 우수한 기술력과 상품력을 보유하고 있으나 고유브랜드 육성에 어려움을 겪고 있는
+            우수기업들이 서울시가 인정한 중소기업 공동브랜드인 하이서울브랜드를 활용하여 제품 경쟁력을 강화할 수 있도록 각종 홍보 마케팅을 지원하는 사업입니다.
+            서울시와 서울산업진흥원(SBA)이 공동으로 지원하는 하이 서울브랜드 사업은 우수한 기술력과 상품력을 보유하고 있으나 고유브랜드 육성에 어려움을 겪고 있는 우수기업들이 서울시가 인정한 중소기업
+            공동브랜드인 하이서울브랜드를 활용하여 제품 경쟁력을 강화할 수 있도록 각종 홍보 마케팅을 지원하는 사업입니다.
+            서울시와 서울산업진흥원(SBA)이 공동으로 지원하는 하이 서울브랜드 사업은 우수한 기술력과 상품력을 보유하고 있으나 고유브랜드 육성에 어려움을 겪고 있는 우수기업들이 서울시가 인정한 중소기업
+            공동브랜드인 하이서울브랜드를 활용하여 제품 경쟁력을 강화할 수 있도록 각종 홍보 마케팅을 지원하는 사업입니다.
+            서울시와 서울산업진흥원(SBA)이 공동으로 지원하는 하이 서울브랜드 사업은 우수한 기술력과 상품력을 보유하고 있으나 고유브랜드 육성에 어려움을 겪고 있는 우수기업들이 서울시가 인정한 중소기업
+            공동브랜드인 하이서울브랜드를 활용하여 제품 경쟁력을 강화할 수 있도록 각종 홍보 마케팅을 지원하는 사업입니다.
+            서울시와 서울산업진흥원(SBA)이 공동으로 지원하는 하이 서울브랜드 사업은 우수한 기술력과 상품력을 보유하고 있으나 고유브랜드 육성에 어려움을 겪고 있는 우수기업들이 서울시가 인정한 중소기업
+            공동브랜드인 하이서울브랜드를 활용하여 제품 경쟁력을 강화할 수 있도록 각종 홍보 마케팅을 지원하는 사업입니다.
+            서울시와 서울산업진흥원(SBA)이 공동으로 지원하는 하이 서울브랜드 사업은 우수한 기술력과 상품력을 보유하고 있으나 고유브랜드 육성에 어려움을 겪고 있는 우수기업들이 서울시가 인정한 중소기업
+            공동브랜드인 하이서울브랜드를 활용하여 제품 경쟁력을 강화할 수 있도록 각종 홍보 마케팅을 지원하는 사업입니다.
+            서울시와 서울산업진흥원(SBA)이 공동으로 지원하는 하이 서울브랜드 사업은 우수한 기술력과 상품력을 보유하고 있으나 고유브랜드 육성에 어려움을 겪고 있는 우수기업들이 서울시가 인정한 중소기업
+            공동브랜드인 하이서울브랜드를 활용하여 제품 경쟁력을 강화할 수 있도록 각종 홍보 마케팅을 지원하는 사업입니다.
+            서울시와 서울산업진흥원(SBA)이 공동으로 지원하는 하이 서울브랜드 사업은 우수한 기술력과 상품력을 보유하고 있으나 고유브랜드 육성에 어려움을 겪고 있는 우수기업들이 서울시가 인정한 중소기업
+            공동브랜드인 하이서울브랜드를 활용하여 제품 경쟁력을 강화할 수 있도록 각종 홍보 마케팅을 지원하는 사업입니다.
+            서울시와 서울산업진흥원(SBA)이 공동으로 지원하는 하이 서울브랜드 사업은 우수한 기술력과 상품력을 보유하고 있으나 고유브랜드 육성에 어려움을 겪고 있는 우수기업들이 서울시가 인정한 중소기업
+            공동브랜드인 하이서울브랜드를 활용하여 제품 경쟁력을 강화할 수 있도록 각종 홍보 마케팅을 지원하는 사업입니다.
+            서울시와 서울산업진흥원(SBA)이 공동으로 지원하는 하이 서울브랜드 사업은 우수한 기술력과 상품력을 보유하고 있으나 고유브랜드 육성에 어려움을 겪고 있는 우수기업들이 서울시가 인정한 중소기업
+            공동브랜드인 하이서울브랜드를 활용하여 제품 경쟁력을 강화할 수 있도록 각종 홍보 마케팅을 지원하는 사업입니다.
+            서울시와 서울산업진흥원(SBA)이 공동으로 지원하는 하이 서울브랜드 사업은 우수한 기술력과 상품력을 보유하고 있으나 고유브랜드 육성에 어려움을 겪고 있는 우수기업들이 서울시가 인정한 중소기업
+            공동브랜드인 하이서울브랜드를 활용하여 제품 경쟁력을 강화할 수 있도록 각종 홍보 마케팅을 지원하는 사업입니다.
+            서울시와 서울산업진흥원(SBA)이 공동으로 지원하는 하이 서울브랜드 사업은 우수한 기술력과 상품력을 보유하고 있으나 고유브랜드 육성에 어려움을 겪고 있는 우수기업들이 서울시가 인정한 중소기업
+            공동브랜드인 하이서울브랜드를 활용하여 제품 경쟁력을 강화할 수 있도록 각종 홍보 마케팅을 지원하는 사업입니다.
+            서울시와 서울산업진흥원(SBA)이 공동으로 지원하는 하이 서울브랜드 사업은 우수한 기술력과 상품력을 보유하고 있으나 고유브랜드 육성에 어려움을 겪고 있는 우수기업들이 서울시가 인정한 중소기업
+            공동브랜드인 하이서울브랜드를 활용하여 제품 경쟁력을 강화할 수 있도록 각종 홍보 마케팅을 지원하는 사업입니다.
+            서울시와 서울산업진흥원(SBA)이 공동으로 지원하는 하이 서울브랜드 사업은 우수한 기술력과 상품력을 보유하고 있으나 고유브랜드 육성에 어려움을 겪고 있는 우수기업들이 서울시가 인정한 중소기업
+            공동브랜드인 하이서울브랜드를 활용하여 제품 경쟁력을 강화할 수 있도록 각종 홍보 마케팅을 지원하는 사업입니다.
+            서울시와 서울산업진흥원(SBA)이 공동으로 지원하는 하이 서울브랜드 사업은 우수한 기술력과 상품력을 보유하고 있으나 고유브랜드 육성에 어려움을 겪고 있는 우수기업들이 서울시가 인정한 중소기업
+            공동브랜드인 하이서울브랜드를 활용하여 제품 경쟁력을 강화할 수 있도록 각종 홍보 마케팅을 지원하는 사업입니다.
+            서울시와 서울산업진흥원(SBA)이 공동으로 지원하는 하이 서울브랜드 사업은 우수한 기술력과 상품력을 보유하고 있으나 고유브랜드 육성에 어려움을 겪고 있는 우수기업들이 서울시가 인정한 중소기업
+            공동브랜드인 하이서울브랜드를 활용하여 제품 경쟁력을 강화할 수 있도록 각종 홍보 마케팅을 지원하는 사업입니다.
+            서울시와 서울산업진흥원(SBA)이 공동으로 지원하는 하이 서울브랜드 사업은 우수한 기술력과 상품력을 보유하고 있으나 고유브랜드 육성에 어려움을 겪고 있는 우수기업들이 서울시가 인정한 중소기업
+            공동브랜드인 하이서울브랜드를 활용하여 제품 경쟁력을 강화할 수 있도록 각종 홍보 마케팅을 지원하는 사업입니다.
+            서울시와 서울산업진흥원(SBA)이 공동으로 지원하는 하이 서울브랜드 사업은 우수한 기술력과 상품력을 보유하고 있으나 고유브랜드 육성에 어려움을 겪고 있는 우수기업들이 서울시가 인정한 중소기업
+            공동브랜드인 하이서울브랜드를 활용하여 제품 경쟁력을 강화할 수 있도록 각종 홍보 마케팅을 지원하는 사업입니다.
+            서울시와 서울산업진흥원(SBA)이 공동으로 지원하는 하이 서울브랜드 사업은 우수한 기술력과 상품력을 보유하고 있으나 고유브랜드 육성에 어려움을 겪고 있는 우수기업들이 서울시가 인정한 중소기업
+            공동브랜드인 하이서울브랜드를 활용하여 제품 경쟁력을 강화할 수 있도록 각종 홍보 마케팅을 지원하는 사업입니다.
+            서울시와 서울산업진흥원(SBA)이 공동으로 지원하는 하이 서울브랜드 사업은 우수한 기술력과 상품력을 보유하고 있으나 고유브랜드 육성에 어려움을 겪고 있는 우수기업들이 서울시가 인정한 중소기업
+            공동브랜드인 하이서울브랜드를 활용하여 제품 경쟁력을 강화할 수 있도록 각종 홍보 마케팅을 지원하는 사업입니다.
+            서울시와 서울산업진흥원(SBA)이 공동으로 지원하는 하이 서울브랜드 사업은 우수한 기술력과 상품력을 보유하고 있으나 고유브랜드 육성에 어려움을 겪고 있는 우수기업들이 서울시가 인정한 중소기업
+            공동브랜드인 하이서울브랜드를 활용하여 제품 경쟁력을 강화할 수 있도록 각종 홍보 마케팅을 지원하는 사업입니다.</div>
+
+
+    </div>
+    <div id="footer">
+        <div class="logo"><img src="/img/f_logo.png" alt=""></div>
+        <div class="info">서울산업진흥원</div>
+        <div class="address">주소~</div>
+    </div>
+
+
+
 </body>
+
 </html>
