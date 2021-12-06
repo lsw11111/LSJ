@@ -1,17 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>스마트폰 레이아웃2</title>
     <style>
-* {margin: 0 auto;}
+        * {
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        #header {
+            width: 100%;
+
+        }
+
+        #header_wrap {
+            background-color: rgba(231, 134, 42, 0.981);
+            width: 100%;
+            height: 50px;
+            position: relative;
+            text-align: center;
+        }
+
+        #header_wrap .myinfo {
+            position: absolute;
+            right: 5px;
+
+        }
+
+        #header_wrap .menu {
+            position: absolute;
+            left: 5px;
+        }
+
+        #header_wrap .logo {
+            color: rgb(255, 255, 255);
+            line-height: 50px;
+            font-size: 1.3em;
+        }
+
+        #header #search {
+            width: 100%;
+            height: 50px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #header #search input {
+            width: 100%;
+            border: 5px solid rgba(231, 134, 42, 0.981);
+            box-sizing: border-box;
+            font-size: 20px;
+            padding: 9px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        #header #search input:focus {
+            border: 5px solid rgba(231, 134, 42, 0.981);
+            box-sizing: border-box;
+
+        }
+
+        #header #search a {
+            position: absolute;
+            right: 0;
+            top: 0;
+
+        }
+
+        #lnb_wrap ul {
+            overflow: hidden;
+            margin-top: 5px;
+        }
+
+        #lnb_wrap ul li {
+            width: 16.6%;
+            height: 30px;
+            float: left;
+            text-align: center;
+            line-height: 30px;
+            border-right: 1px solid darkgray;
+            box-sizing: border-box;
+            font-size: 0.9em;
+        }
+
+        #lnb_wrap ul li:last-child {
+            border-right: 0;
+
+        }
+
+        #section #section_1 {
+            overflow: hidden;
+
+        }
+
+        #section #section_1 .row1 {
+            width: 50%;
+            height: 135px;
+            border: 2px solid darkgray;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        #section #section_1 .row1:last-child {
+            float: right;
+        }
+
+        #section #section_1 .row2 {
+            width: 50%;
+            height: 135px;
+            border: 2px solid darkgray;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        #section #section_1 .row2:last-child {
+            float: right;
+        }
+
+        #section #section_1 .row3 {
+            width: 50%;
+            height: 135px;
+            border: 2px solid darkgray;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        #section #section_1 .row3:last-child {
+            float: right;
+        }
+
+        #section #section_2 ul {
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        #section #section_2 ul li {
+            border-bottom: 1px solid darkgray;
+            white-space: nowrap;
+            overflow: hidden;
+            padding: 5px;
+            text-overflow: ellipsis;
+        }
+        #section #section_3 {
+            margin-top: 10px;
+        }
+        #section #section_3 ul li {
+            overflow: hidden;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid darkgray;
+            box-sizing: border-box;
+        }
+        #section #section_3 ul li .img {
+            background-color: rgb(192, 173, 173);
+            float: left;
+            width: 100px;
+            height: 100px;
+
+        }
+        #section #section_3 ul li .txt {
+            float: left;
+            width: 300px;
+            height: 100px;
+        }
+        #section #section_3 ul li .txt span:first-child {
+            float: left;
+            width: 300px;
+            margin-left: 10px;
+            color: rgb(3, 167, 255);
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        #section #section_3 ul li .txt span:last-child {
+            float: left;
+            width: 300px;
+            height: 100px;
+            margin-left: 10px;
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+        }
+        #footer {
+            padding: 5px;
+            text-align: center;
+        }
+        #footer p:last-child {
+            font-size: 0.8em;
+        }
 
     </style>
 </head>
+
 <body>
-    
+    <div id="header">
+        <div id="header_wrap">
+            <a href="#" class="menu"><img src="/img/menu (2).png" alt="메뉴"></a>
+            <a href="#" class="logo">Mobile logo</a>
+            <a href="#" class="myinfo"><img src="/img/myinfo.png" alt="마이인포"></a>
+        </div>
+        <div id="search">
+            <input type="text">
+            <a href="#"><img src="/img/search.png" alt="검색"></a>
+        </div>
+    </div>
+    <div id="lnb_wrap">
+        <ul>
+            <li><a href="#">lnb1</a></li>
+            <li><a href="#">lnb2</a></li>
+            <li><a href="#">lnb3</a></li>
+            <li><a href="#">lnb4</a></li>
+            <li><a href="#">lnb5</a></li>
+            <li><a href="#">lnb6</a></li>
+        </ul>
+    </div>
+    <div id="section">
+        <div id="section_1">
+            <div class="row1"><a href="#"><img src="#" alt="1"></a></div>
+            <div class="row1"><a href="#"><img src="#" alt="1"></a></div>
+            <div class="row2"><a href="#"><img src="#" alt="2"></a></div>
+            <div class="row2"><a href="#"><img src="#" alt="2"></a></div>
+            <div class="row3"><a href="#"><img src="#" alt="3"></a></div>
+            <div class="row3"><a href="#"><img src="#" alt="3"></a></div>
+        </div>
+        <div id="section_2">
+            <ul>
+                <li><a
+                        href="#">중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업</a>
+                </li>
+                <li><a
+                        href="#">중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업</a>
+                </li>
+                <li><a
+                        href="#">중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업</a>
+                </li>
+                <li><a
+                        href="#">중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업</a>
+                </li>
+                <li><a
+                        href="#">중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업중소기업</a>
+                </li>
+            </ul>
+        </div>
+        <div id="section_3">
+            <ul>
+                <li>
+                    <p class="img"><a href="#"><img src="#" alt="이미지"></a></p>
+                    <p class="txt"><a href="#">
+                        <span>서울산업진흥원</span>
+                        <span>서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원</span>
+                    </a></p>
+                </li>
+                <li>
+                    <p class="img"><a href="#"><img src="#" alt="이미지"></a></p>
+                    <p class="txt"><a href="#">
+                        <span>서울산업진흥원</span>
+                        <span>서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원</span>
+                    </a></p>
+                </li>
+                <li>
+                    <p class="img"><a href="#"><img src="#" alt="이미지"></a></p>
+                    <p class="txt"><a href="#">
+                        <span>서울산업진흥원</span>
+                        <span>서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원서울산업진흥원</span>
+                    </a></p>
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
+    <div id="footer">
+        <p><img src="/img/f_logo.png" alt="서울산업진흥원"></p>
+        <p>주소</p>
+        </div>
+
+
+
+
+
+
 
 </body>
+
 </html>
