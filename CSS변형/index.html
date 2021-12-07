@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS변형</title>
+    <style>
+        div {
+            width: 800px;
+            height: 500px;
+            margin: 0 auto; 
+            border: 1px solid darkgray;
+            
+        }
+        ul {overflow: hidden;}
+        ul li {
+            float: left;
+            list-style: none;
+            background-color: rgb(191, 149, 149);
+            margin-right: 10px;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            transition-duration: 2s;
+            transition-delay: 1s;
+            transition-timing-function: ease-in;
+            
+
+        }
+        li:hover {
+            height: 400px;
+            background-color: rgb(255, 206, 11);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div><ul>
+            <li>gnb1</li>
+            <li>gnb2</li>
+            <li>gnb3</li>
+            <li>gnb4</li>
+            <li>gnb5</li>
+        </ul></div>
+    </div>
+
+</body>
+
+</html>
