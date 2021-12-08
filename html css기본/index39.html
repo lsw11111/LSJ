@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>레이아웃 구성</title>
+    <style>
+div {
+    text-align: center;
+    border: 1px solid darkgray;
+    padding: 5px;
+    margin: 5px;
+}
+#home {
+    width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#header {
+    width: 780px;
+    height: 100px;
+    line-height: 100px;
+
+}
+#nav {
+    width: 780px;
+    height: 100px;
+    overflow: hidden;
+    line-height: 30px
+    
+}
+#nav ul li {
+    background: -webkit-linear-gradient(top,  #e800b1 18%,#e800b1 30%,#efe700 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #e800b1 18%,#e800b1 30%,#efe700 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e800b1', endColorstr='#efe700',GradientType=0 ); /* IE6-9 */
+;
+    list-style: none;
+    float: left;
+    width: 138px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid darkgray;
+}
+#wrap {
+    width: 780px;
+    overflow: hidden;
+    border: 1px solid darkgray;
+}
+#content {
+    width: 600px;
+    height: 300px;
+    float: left;
+    line-height: 300px;
+}
+#banner {
+    width: 135px;
+    height: 300px;
+    float: left;
+    line-height: 300px;
+    }
+#footer {
+    width: 780px;
+    height: 100px;
+    line-height: 100px;
+}
+    </style>
+</head>
+<body>
+    <div id="home">
+
+        <div id="header">Header</div>
+        
+        <div id="nav">Nav
+            <ul>
+                <li>menu1</li>
+                <li>menu1</li>
+                <li>menu1</li>
+                <li>menu1</li>
+                <li>menu1</li>
+            </ul>
+        </div>
+
+        <div id="wrap">
+            <div id="content">content</div>
+            <div id="banner">Banner</div>
+
+        </div>
+
+        <div id="footer">Footer</div>
+
+    </div>
+
+</body>
+</html>

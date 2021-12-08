@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>포지션2</title>
+    <style>
+#contain {
+    width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid darkgrey;
+    overflow: hidden;
+}
+#contain #header {
+    background-color:darkgray;
+    width: 1000px;
+    height: 100px;
+    
+}
+#contain #wrap {
+    width: 1000px;
+    height: 200px;
+    position: relative;
+}
+#contain #wrap .box1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 20;
+    border: 2px dashed green;
+}
+#contain #wrap .box2 {
+    width: 100px;
+    height: 100px;
+    background-color:yellow;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 10;
+    border: 2px dashed green;
+}
+#footer {
+    width: 1000px;
+    height: 100px;
+    background-color: darkgrey;
+    
+}
+    </style>
+</head>
+<body>
+    <div id="contain">
+
+        <div id="header">HEADER</div>
+        <div id="wrap">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+        <div id="footer">FOOTER</div>
+
+    </div>
+</body>
+</html>
