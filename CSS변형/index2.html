@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="prefixfree.min.js"></script>
+    <meta charset="UTF-8">
+    <title>CSS 애니메이션</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+}
+#wrap {
+    position: relative;
+    }
+li {
+    list-style: none;
+}    
+#wrap { width: 500px;
+    height: 300px;
+    
+
+}
+#wrap #lnb {
+    background-color: rgb(162, 162, 162);
+
+}
+#wrap #lnb ul {
+    overflow: hidden;
+
+}
+#wrap #lnb ul li {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(199, 226, 21);
+    margin: 5px;
+    border-radius: 10px;
+    text-align: left;
+    line-height: 50px;
+    animation-name: ani1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes ani1 {
+    from {width: 100px; left: 5px;}
+    to {width: 400px;}
+}
+#wrap #lnb ul li a{
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+       
+}
+#wrap #rec {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 217, 0);
+    line-height: 100px;
+    text-align: center;
+    animation-name: ani2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+    left: 0;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#wrap #rec:hover {    
+    animation-play-state: paused;}
+    
+@keyframes ani2 {
+from {width: 100px;
+left: 0;
+transform: rotate(0deg);} 
+to {width: 200px; height: 200px; border-radius: 100px; background-color: rgb(252, 132, 4);
+left: 500px; transform: rotate(360deg); line-height: 200px;}
+    
+}
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="lnb">
+            <ul>
+                <li><a href="#">lnb1</a></li>
+                <li><a href="#">lnb1</a></li>
+                <li><a href="#">lnb1</a></li>
+                <li><a href="#">lnb1</a></li>
+                <li><a href="#">lnb1</a></li>
+            </ul>
+        </div>
+        <div id="rec">rec</div>
+    </div>
+
+</body>
+</html>
