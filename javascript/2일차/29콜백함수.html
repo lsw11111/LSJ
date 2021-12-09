@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//콜백함수:매개변수로 전달하는 함수
+//함수의 매개변수로 함수를 넣는것?
+
+//매개변수로 들어온 함수 10번실행
+function callTenTimes(callback) {
+    for (let i = 0; i <10; i++) {
+        callback()
+        
+    }
+
+}
+function testA(){alert("testA함수")}
+var testB=function(){alert("testB함수")}
+
+callTenTimes(testA)
+callTenTimes(testB)
+// 각 함수를 10번씩 실행함
+
+    </script>
+</body>
+</html>

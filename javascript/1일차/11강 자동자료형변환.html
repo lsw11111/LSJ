@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+/*
+자동 자료형 변환
+
+문자형+임의자료형
+52+"273"
+결과값은 "52273" 문자형
++연산이 쓰였는데 문자형이 섞여있으면 결과값이 문자형이 됨
+
+-, *, /가 쓰인경우
+"52273"-10
+결과값 52263 숫자형
+
+"100" - "10"
+위와같은 경우에도 +를 제외한 연산기호가
+쓰였으므로 숫자가 된다
+결과값 90
+
+!"안녕하세요"
+!true
+not true 이므로 false가 결과값
+*/
+
+console.log(100+10)
+console.log(100-10)
+console.log(100*10)
+console.log(100/10)
+console.log('')
+console.log(100+10)
+console.log(100+10)
+console.log("100"+"10")
+console.log("100"-"10")
+console.log("100"*"10")
+
+//숫자100을 문자열로 변환하는 2가지방법
+//string(100)   //1
+//100+""        //2
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
