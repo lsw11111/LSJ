@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        //object.a 에서 a는 속성
+        //object.b() 에서 b는 메서드
+
+var person = {
+    name: 'A',
+    eat: function(매개변수){
+        alert(this.name+'이 '+매개변수+'을 먹습니다')
+        //this.는 속성중 하나를 가져온것
+    }
+}
+person.eat('밥')
+//화살표함수 () => {}는 이게 안됨
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

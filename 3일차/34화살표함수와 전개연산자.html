@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+// function() {}
+//위 아래가 내용은 똑같음
+// () => {} //가변 매개변수 사용불가
+
+//전개연산자
+var sumAll=(a,b, ...numbers) => {
+    var output =0;
+    for (let i=0; i<numbers.length; i++) 
+    { output+=numbers[i]    }
+    return output
+    }
+    alert(sumAll(1,2,3,4,5));
+    //...는 배열뒤에만 올수있다
+
+    //매개변수 전달
+    var array=[1,2,3,4,5,6,7,8]
+    sumAll.apply(null,array) //구버전
+    sumAll(...array) //신버전
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

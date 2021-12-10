@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Document</title>
+    <script>
+var students=[]
+
+students.push({이름:'연하진', 국어:92,수학:98})
+students.push({이름:'구지연', 국어:76,수학:96})
+
+var output="이름\t총합\t평균\n"
+for (let i = 0; i < students.length; i++) {
+    var sumAll=students[i].국어+students[i].수학
+    var average=sumAll/2
+    output+=students[i].이름+"\t"+sumAll+"\t"+average+"\n"
+}
+console.log(output)
+
+//???
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

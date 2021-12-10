@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+//object = 객체 생성
+var array = ["바나나","사과","귤"]
+var object={ //중괄호로 생성
+    키a:"값a",
+    키b:"값b",
+    키c:"값c",
+    키d:"값d",
+};
+
+//객체 요소 접근방법
+object["키a"]
+object["키b"]
+object["키c"]
+object["키d"]
+//변수로 활용할경우 이방법
+var keyA="키a"
+object[keyA] // =object["키a"]=>값a
+
+object.키a //이방법이 더 많이쓰임
+
+// object를 반복하는 반복문 forin
+// for (var key in object) {
+//     alert(object[i])
+// }
+
+//예제
+var product={
+    제품명:'7D 건조망고',
+    유형:'당절임',
+    성분:'이거저거그거',
+    원산지:'필리핀'
+}
+for (var key in product) {
+    // alert(product[key])
+    // alert(key+":"+product[key]) 
+    // 밑에껀 키와 값을 같이 출력
+}
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
