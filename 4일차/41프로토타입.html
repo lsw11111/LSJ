@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>프로토타입</title>
+    <script>
+
+//생성자 함수.앞글자 대문자
+function Student(이름,국어,수학) {
+this.이름=이름;
+this.국어=국어;
+this.수학=수학;
+}
+Student.prototype.getSum=function(){
+    return this.국어 + this.수학
+}
+Student.prototype.getAverage=function(){
+    return this.getSum()/2
+}
+Student.prototype.toString=function(){
+    return this.이름 + "\t" + this.getSum() + "\t" + this.getAverage() + "\n"
+}
+var students=[];
+students.push(new Student("윤인성",80,80))
+students.push(new Student("구지연",90,60))
+//생성자 함수로 객체화된 실체를 '인스턴스'
+
+var output="이름\t총합\t평균\n"
+for (let i = 0; i < students.length; i++) {
+    output+=students[i].toString()
+}
+console.log(output)
+
+//클래스와의 이념?싸움에 밀림
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

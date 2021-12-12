@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+//값 복사
+var originvalue=10
+var newvalue=originvalue
+orivalue=273 //원본값 변경
+alert(originvalue)
+alert(newvalue) 
+//273 10, newvalue는 변경이 안됨
+//그냥 복붙의 개념으로 두 변수는 독립적(기본자료형)
+
+//
+var originalarray=[1,2,3,4]
+var newarray=originalarray
+originalarray[0]=273
+
+// alert(originalarray)
+// alert(newarray)
+//객체,배열에선 둘다 바뀜. 참조 복사
+//서로에 영향없이 하려면 아예 따로 만들어서
+var new2array=[]
+for (let i = 0; i < originalarray.length; i++) {
+    new2array[i]=originalarray[i] //변경할 값을 왼쪽에!!
+    }
+new2array[0]=5
+alert(new2array)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

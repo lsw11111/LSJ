@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script>
+// var object={}
+// var object=new Object() //객체 생성방법
+//위가 더 많이 쓰임
+function isNumber(value) {
+    return value.constructor===Number //number, Number?????
+}
+var primitiveNumber=222
+var objectNumber=new Number(52)
+//객체는 typeof 가 아니라 뒤에 .constructor를 붙여서 자료형확인
+alert(isNumber(primitiveNumber))
+alert(isNumber(objectNumber.constructor))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

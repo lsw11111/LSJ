@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>캡슐화</title>
+</head>
+<script>
+//생성자 함수
+function Rectangle(width,height) {
+    var _width=width;
+    var _height=height; 
+    //길이 높이는 0이하가 될수없으므로
+    //_를 넣어서 접근막음
+    this.getWidth=function() { //게터
+        return _width
+    }
+    this.getHeight=function() {
+        return _height
+    }
+    this.setwidth=function(value) { //세터
+        if(value<=0) {return alert("0이하값 x")
+    }
+        _width=value}
+    this.setheight=function(value) {
+        if(value<=0) {return alert("0이하값 x")
+    }
+        _height=value}
+}
+Rectangle.prototype.getArea=function() {
+    return this.getWidth()*this.getHeight() //??
+}
+var rectangle=new Rectangle(5,7);
+//변수를 보호하기 위해 앞에 _를 사용
+//클로저?를 이용
+//위 둘을 혼용하는게 캡슐화
+
+
+
+</script>
+<body>
+    
+</body>
+</html>

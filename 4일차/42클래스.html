@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>클래스</title>
+    <script>
+        class Student {
+            constructor(이름, 국어, 수학) { 
+                //클래스의 인스턴스 객체생성, 초기화. 메서드
+                this.이름 = 이름;
+                this.국어 = 국어;
+                this.수학 = 수학;
+            }
+            getSum() {
+                return this.국어 + this.수학
+            }
+            getAverage() {
+                return this.getSum() / 2
+            }
+            toString() {
+                return this.이름 + "\t" + this.getSum() + "\t" + this.getAverage() + "\n"
+            }
+        }
+        var students = [];
+        students.push(new Student("윤인성", 80, 80))
+        students.push(new Student("구지연", 90, 60))
+        var output = "이름\t총합\t평균\n"
+        for (let i = 0; i < students.length; i++) {
+            output += students[i].toString()
+        }
+        console.log(output)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

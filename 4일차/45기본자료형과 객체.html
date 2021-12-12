@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+var primitiveNumber=273;
+var objectNubmer=new Number(273);
+
+
+var output='';
+output+=typeof(primitiveNumber)+' : '+primitiveNumber
+output+=typeof(objectNubmer)+' : '+objectNubmer
+alert(output)
+
+//.찍고 속성생성시
+primitiveNumber.a=10 //이번줄이 끝나면 undefined가 되는 일회용
+objectNubmer.a=10 //객체이므로 적용됨
+
+Number.prototype.power=function() {
+    return this*this
+}
+primitiveNumber.power()
+// ???????????
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
