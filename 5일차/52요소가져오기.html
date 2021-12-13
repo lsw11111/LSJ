@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="a" class="test" title="aaa">hello1</h1>
+    <h1 id="b">hello2</h1>
+    <h1 id="c">hello3</h1>
+
+    <script>
+        var helloA = document.getElementById("a")
+        var helloB = document.getElementById("b")
+        var helloC = document.getElementById("c")
+        //html상에 입력된 id가져오기
+        helloA.setAttribute("title", "hello") //title값줌
+        helloB.innerHTML = "hello3" //내용변경
+
+        //우리나라는 ie쓰는데가 많아서
+        //모바일에서만 쓰이는 메소드querySelector
+        var headerA = document.querySelector("h1")
+        headerA.style.color = "red"
+        var headerB = document.querySelector("#a")
+        headerB.style.fontSize = "5em"
+        document.querySelector(".test")
+        helloA.style.fontFamily = "바탕"
+        document.querySelector("[title=aaa]")
+        helloA.style.textAlign = "center"
+
+        var colors = ["blue", "red", "darkgray"]
+        var array = document.querySelectorAll("h1")
+        for (let i = 0; i < array.length; i++) {
+            array[i].style.color = colors[i]
+        }
+        //여러개 한꺼번에
+    </script>
+</body>
+
+</html>
