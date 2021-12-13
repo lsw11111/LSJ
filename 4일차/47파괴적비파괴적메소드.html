@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+//비파괴적 메소드. 자기자신을 유지함
+var string="Hello"
+string.toUpperCase() //"Hello"를 그대로 유지
+string = string.toUpperCase() //리턴값을 자기자신으로 하면 적용됨
+console.log(string)
+//메소드 체이닝. 여러 메소드 추가
+// string = string.toUpperCase()
+//                .anchor()
+
+
+
+//파괴적 메소드. 자기자신을 변화
+var array=[1,2,3,4,5]
+array.push(7)
+
+function Test() {}
+    Test.prototype.testA=function(){return this}
+    Test.prototype.testB=function(){return this}
+    Test.prototype.testC=function(){return this}
+var test=new Test()
+test.testA().testB().testC()
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

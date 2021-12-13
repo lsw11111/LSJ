@@ -9,13 +9,17 @@
 // var object=new Object() //객체 생성방법
 //위가 더 많이 쓰임
 function isNumber(value) {
-    return value.constructor===Number //number, Number?????
+    return value.constructor===Number //number-자료형 숫자, Number객체내의 숫자???
 }
+
 var primitiveNumber=222
 var objectNumber=new Number(52)
-//객체는 typeof 가 아니라 뒤에 .constructor를 붙여서 자료형확인
-alert(isNumber(primitiveNumber))
-alert(isNumber(objectNumber.constructor))
+//객체내의 자료형 확인은 typeof 가 아니라
+//뒤에 .constructor를 붙여서 자료형확인
+console.log(isNumber(primitiveNumber))
+console.log(isNumber(objectNumber.constructor))
+
+
     </script>
 </head>
 <body>

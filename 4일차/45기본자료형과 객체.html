@@ -9,9 +9,9 @@ var objectNubmer=new Number(273);
 
 
 var output='';
-output+=typeof(primitiveNumber)+' : '+primitiveNumber
+output+=typeof(primitiveNumber)+' : '+primitiveNumber+'\n'
 output+=typeof(objectNubmer)+' : '+objectNubmer
-alert(output)
+console.log(output)
 
 //.찍고 속성생성시
 primitiveNumber.a=10 //이번줄이 끝나면 undefined가 되는 일회용
@@ -20,7 +20,7 @@ objectNubmer.a=10 //객체이므로 적용됨
 Number.prototype.power=function() {
     return this*this
 }
-primitiveNumber.power()
+console.log(primitiveNumber.power())
 // ???????????
     </script>
 </head>

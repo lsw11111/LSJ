@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+//태그 요소 문서객체.. 거의 같음
+//html, head,body,title 등을
+//노드라고 부름
+//태그= 요소노드
+//문자열=텍스트노드
+window.onload=function(){
+for (var i = 1; i <4; i++) {
+        
+var header=document.createElement("h1")
+header.innerHTML="hello"+i+"번째"
+document.body.appendChild(header)
+}// 
+// var textNode=document.createTextNode
+// header.appendChild(textNode)("hello")
+//=header.innerHTML="hello"
+// 텍스트노드 추가
+
+for (let i = 0; i < 3; i++) {
+var image=document.createElement("img")
+image.setAttribute("src","http://placehold.it/300x"+(i+1)+"00") //아래와 같음
+// image.src="http://placehold.it/300x300"
+document.body.appendChild(image)
+}
+
+//// var attrNode=document.createAttribute("src")
+// attrNode.value="http://placehold.it/300x300"
+//=image.setAttribute("src","http://placehold.it/300x300")
+//=image.src="http://placehold.it/300x300"
+// image.setAttributeNode(attrNode)
+//속성노드 추가
+
+
+
+}
+//appendChild 하위항목으로 만든다
+//f12 -elements에서 확인
+    </script>
+</head>
+<body>
+    
+    
+
+
+</body>
+</html>

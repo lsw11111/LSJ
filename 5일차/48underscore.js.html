@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="underscore-esm.js"></script>
+    <script src="underscore-umd.js"></script>
+<script>
+//underscore.js라이브러리:기본유틸모음
+var array=[
+    {이름:"바나나", 가격:500},
+    {이름:"사과", 가격:400},
+    {이름:"배", 가격:600} 
+];
+//사용법 함수방식
+var sortby=_.sortBy(array,function(item){return item.가격})
+var sortby=_.sortBy(array, (item) =>item.가격)
+ //화살표함수
+
+console.log(sortby)
+console.log(_.sample(array,2))
+console.log(_.shuffle(array))
+
+
+//객체방식
+
+
+</script>
+    
+
+
+
+
+    
+</head>
+<body>
+    
+</body>
+</html>
