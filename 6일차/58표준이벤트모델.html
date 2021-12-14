@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<h1>ㅇㅇ</h1>
+<a href="http://google.com">구글</a>
+    <script>
+//표준이벤트모델
+//ie구버전 사용불가
+//이벤트 여러개 연결가능
+var listener=function(){alert("경고")}
+
+var header=document.querySelector("h1")
+header.addEventListener("click",listener)
+var header=document.querySelector("h1")
+header.addEventListener("click",listener)
+header.removeEventListener("click",listener) 
+//이벤트 삭제
+var a=document.querySelector("a")
+a.addEventListener("click",function(e){
+e.stopPropagation();
+e.preventDefault() //기본이벤트 제거
+//고전은 return false
+})
+
+    </script>
+</body>
+</html>

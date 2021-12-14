@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{border: 3px solid black;}
+
+
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="inner">
+            <h1 id="header">hello</h1>
+        </div>
+    </div>
+    <a href="http://google.com">default event</a>
+</body>
+<script>
+    //default이벤트 제거
+var a=document.querySelector("a")
+a.onclick=function(){
+return false
+
+}
+//
+var outer=document.getElementById("outer")
+outer.onclick=function(){
+    this.style.backgroundColor="red"
+}
+var inner=document.getElementById("inner")
+inner.onclick=function(){
+    this.style.backgroundColor="blue"
+}
+var header=document.getElementById("header")
+header.onclick=function(e){
+    this.style.backgroundColor="green";
+    e.stopPropagation() //이벤트 전달제거
+    //body안의 outer안의 inner안에 있어서
+    //header누르면 이벤트가 다 발생되는걸 방지
+    
+}
+var body=document.body
+body.onclick=function(){
+    this.style.backgroundColor="yellow"
+}
+
+
+</script>
+</html>

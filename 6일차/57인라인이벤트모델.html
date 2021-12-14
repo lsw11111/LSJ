@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+<h1 onclick="alert('경고');event.stopPropagation()">dd</h1>
+<a href="http://google.com" onclick="event.stopPropagation();return false;">구글</a>
+</div>
+    <script>
+//위 h1태그내에 onclick을 넣어준게
+//인라인 이벤트
+//엔터로 안되고 ;를 넣어서 이벤트 추가
+var body=document.body
+body.onclick=function(){
+    this.style.backgroundColor="yellow"
+}
+    
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

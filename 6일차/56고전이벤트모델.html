@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+    -고전이벤트모델
+    -인라인 이벤트모델
+     
+    -ie이벤트 모델(x)
+    -표준 이벤트 모델 -->
+
+    <h1 id="header">ㅇㅇ</h1>
+    
+    <script>
+        // header.on으로 시작=이벤트 속성
+        //고전 이벤트모델
+
+        for (let i = 0; i < 5; i++) {
+            var hd = document.createElement("h1")
+            hd.innerHTML = "ㅇㅇ"
+            hd.onclick = function (e) {
+                this.style.color = "darkgray";
+                //이벤트관련(여기선 onclick) 추가정보
+                //=fuction안에 e를 넣어서
+                //e.로 추가
+                
+                
+            }
+            document.body.appendChild(hd)
+        }
+
+
+
+        
+    </script>
+
+</body>
+
+</html>
