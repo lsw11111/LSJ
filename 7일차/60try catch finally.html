@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script src="underscore-esm.js"></script>
+    <script src="underscore-umd.js"></script>
+
+    <script>
+
+// //고급 예외처리
+//try 파일을 열고 쓰는, 네트워크를 여는
+//finally 파일닫는, 네트워크 닫는
+function test() {
+try{ alert('A위치')
+return alert('B위치') //나는 나옴.. ??????
+}
+catch(exception) { //예외 객체
+//     console.log(exception)
+//     console.log(exception.name)
+//     console.log(exception.message)
+//     console.log(exception.description)
+//     >>예외와 관련된정보
+    alert('C위치')
+}
+finally { //무조건 실행
+    alert('D위치')
+}
+}
+
+test()
+
+
+    </script>
+</body>
+</html>

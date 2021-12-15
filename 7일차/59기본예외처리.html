@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script src="underscore-esm.js"></script>
+    <script src="underscore-umd.js"></script>
+
+    <script>
+//구문오류:실행전,괄호를 안닫는등
+//예외,런타임에러:
+// alert("dd")
+// arret("dd") //실행후 문제,오탈자 해결
+
+//기본 예외처리-조건문
+var input=prompt("숫자입력","숫자")
+var numberInput=Number(input)
+var array=[
+function(){alert("0번째 함수")},
+function(){alert("1번째 함수")},
+function(){alert("2번째 함수")}]
+
+if (({}).toString.apply(array[numberInput]) === "[Object Fuction]") //???
+        {array[numberInput]();} 
+else {
+    alert("0~2값 입력")}
+
+
+    </script>
+    
+</body>
+</html>
