@@ -12,7 +12,7 @@
 //구문오류:실행전,괄호를 안닫는등
 //예외,런타임에러:
 // alert("dd")
-// arret("dd") //실행후 문제,오탈자 해결
+// arret("dd") //실행후 문제
 
 //기본 예외처리-조건문
 var input=prompt("숫자입력","숫자")
@@ -22,10 +22,15 @@ function(){alert("0번째 함수")},
 function(){alert("1번째 함수")},
 function(){alert("2번째 함수")}]
 
-if (({}).toString.apply(array[numberInput]) === "[Object Fuction]") //???
-        {array[numberInput]();} 
-else {
-    alert("0~2값 입력")}
+
+if (0<=numberInput && numberInput<=2) {
+    alert(array[numberInput]);
+} else {
+    alert("0~2값 입력"+"입력된값은"+numberInput+"입니다")
+}
+// if (({}).toString.apply(array[numberInput]) === "[Object Fuction]") //???
+//         {array[numberInput]();}        
+
 
 
     </script>

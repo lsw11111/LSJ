@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<script src="jquery-3.6.0.js"></script>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    #header {
+        background-color: orange;
+        overflow: hidden;
+    }
+    #header #gnb {
+        width: 1000px;
+        margin: 0 auto;
+        
+    }
+#header #gnb ul {
+    overflow: hidden;
+    
+
+}
+    #header #gnb ul li {
+        float: left;
+        line-height: 50px;
+        width: 100px;
+        text-align: center;
+
+    }
+    #header #gnb ul li:first-child {
+        padding-left: 300px;
+    }
+</style>
+
+<body>
+    <div id="header">
+        <div id="gnb">
+            <ul id="ul">
+                <li id="li">menu1</li>
+                <li>menu2</li>
+                <li>menu3</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+var handler=function(){
+    alert("ㅇㅇ")
+}
+var li=document.getElementById("li")
+li.addEventListener("click",handler)
+
+
+
+var handler2=function(){
+    alert("ㅇㅇ")
+}
+var ul=document.querySelectorAll("ul").forEach(function(e) {
+e.addEventListener("click",handler2)})
+
+
+
+    </script>
+</body>
+
+</html>
