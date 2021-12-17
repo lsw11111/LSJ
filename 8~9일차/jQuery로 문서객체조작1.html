@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+    <h1>CSS</h1> 
+    <h1>CSS</h1>
+    <h1>CSS</h1>
+    <img src="" alt="attr">
+    <img src="" alt="attr">
+    <img src="" alt="attr">
+    <h2>HTML</h2>
+    <h2>HTML</h2>
+    <h2>HTML</h2>
+    <script>
+        //CSS
+        //1.setter - 지정
+          //a.(문자열,문자열)
+        $("h1").css("color","red")
+          
+          //b.(객체)
+        $("h1").css({
+            "color": "red",
+            "backgroundColor":"orange",
+            "textAlign":"center"
+        })
+          //c.함수
+          var array=["red","blue","gray"]
+          $("h1").css("color",function(index){
+              return array[index]
+          })
+        //2.getter - 추출, 0번째만, index는 0번부터
+        var value=$("h1").css("color")
+        console.log(value)
+        
+
+        //attr
+        //1.settter
+          //a.문자열,문자열
+        $("img").attr("src","http://placehold.it/100x100")
+          //b.객체
+        $("img").attr({
+            "src":"http://placehold.it/100x100",
+            "alt":"test image"
+        })
+          //c.함수
+        $("img").attr("src",function(index){
+            return "http://placehold.it/100x"+(index+1)*100
+        })
+        //2.getter
+        var test=$("img").attr("src")
+        console.log(test)
+
+        //html,text
+        //1.setter
+        $("h2").html("<img src='http://placehold.it/100x100'/>hello")
+        $("h2").text("<img src='http://placehold.it/100x100'/>hello")
+        // $("h2").html(function(index){
+        //     return "ㅇㅇ"+index
+        // })
+        //2.getter
+        var html=$("h2").text()
+        console.log(html)
+        //방식은css,attr와 같음
+        //css,attr는 0번째거만 추출하지만
+        //text는 다 추출
+
+
+    </script>
+</body>
+</html>

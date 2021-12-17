@@ -53,29 +53,29 @@
 //이벤트 전달방식이 자식->부모:이벤트 버블링
 //이벤트 전달을 끊음:이벤트 함수안에 stopPropagation()
 //1
-var listener1=function(){
+var listener1=function(e){
     line1.style.backgroundColor="skyblue"
-    console.log(this)
+    console.log()
 }
 var line1=document.getElementById("line1")
-    line1.addEventListener("click",listener1,true)
+    line1.addEventListener("click",listener1)
 
 //2
 var listener2=function(e){
     line2.style.backgroundColor="orange"
     e.stopPropagation()
-    e.console.log(this)
+    e.console.log()
 }
 var line2=document.getElementById("line2")
-    line2.addEventListener("click",listener2,true)
+    line2.addEventListener("click",listener2)
     
 //3
 var listener3=function(e){
     line3.style.backgroundColor="darkgray"
-    console.log(this)
+    console.log()
 }
 var line3=document.getElementById("line3")
-line3.addEventListener("click",listener3,true)
+line3.addEventListener("click",listener3)
 
 
 </script>

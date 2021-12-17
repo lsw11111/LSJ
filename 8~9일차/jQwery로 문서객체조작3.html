@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+<h1>hello</h1>
+<h2>hello</h2>
+<h3>hello</h3>
+
+    <script>
+
+// $(A).appendTo(B) 뒷부분에 추가
+// $(A).prependTo(B) 앞부분에 추가
+// $(A).insertAfter(B) 뒤에 추가
+// $(A).insertBefore(B) 앞에 추가
+
+// $(B).append(A) 뒷부분에 추가
+// $(B).prepend(A) 앞부분에 추가
+// $(B).After(A) 뒤에 추가
+// $(B).Before(A) 앞에 추가
+//1
+// $("<h1>").html("appendTo").appendTo("body")
+// $("<h1>").html("prependTo").prependTo("body")
+// $("<h1>").html("insertAfter").insertAfter("body")
+// $("<h1>").html("insertBefore").insertBefore("body")
+//2
+// $("body").append("<h1>append")
+// $("body").prepend("<h1>prepend")
+// $("body").after("<h1>after")
+// $("body").before("<h1>before")
+//이동
+$("h1").appendTo("body")
+    </script>
+</body>
+</html>

@@ -5,16 +5,48 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="clock"></h1>
-
+    <!-- <h1 id="clock"></h1> -->
+<!--  -->
+<div id="sun">@</div>
+<div id="earth">O</div>
+<div id="moon">*</div>
 
     <script>
   
-var clock=document.getElementById("clock")
+// var clock=document.getElementById("clock")
+// setInterval(function(){
+//     clock.innerHTML=(new Date().toString())},1000)
+//
+var sun=document.getElementById("sun")
+var earth=document.getElementById("earth")
+var moon=document.getElementById("moon")
+
+var sunX=250
+var sunY=250
+
+sun.style.left=sunX+"px"
+sun.style.top=sunY+"px"
+
+sun.style.position="absolute"
+earth.style.position="absolute"
+moon.style.position="absolute"
+
+var earthAngle=0
+var moonAngle=0
 setInterval(function(){
-    clock.innerHTML=(new Date().toString())},1000)
+var earthX=sunX+Math.cos(earthAngle)*150
+var earthY=sunY+Math.sin(earthAngle)*150
+var moonX=earthX+Math.cos(moonAngle)*30
+var moonY=earthY+Math.sin(moonAngle)*30
 
+earth.style.left=earthX+"px"
+earth.style.top=earthY+"px"
+moon.style.left=moonX+"px"
+moon.style.top=moonY+"px"
 
+earthAngle+=0.1
+moonAngle+=0.3
+},1000/30)
     </script>
 </body>
 </html>
