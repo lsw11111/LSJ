@@ -11,12 +11,10 @@
         margin: 0;
         padding: 0;
     }
-
     li {
         list-style: none;
         text-align: center;
     }
-
     #header #header_name {
         margin: 0 auto;
         width: 500px;
@@ -25,11 +23,9 @@
         border-bottom: 2px solid black;
         padding-bottom: 5px;
     }
-
     #header #header_name hr {
         margin-top: 10px;
     }
-
     #content #div1 {
         width: 500px;
         height: 300px;
@@ -37,11 +33,9 @@
         margin: 0 auto;
         margin-bottom: 10px;
     }
-
     #content #div1 #ul_1 {
         overflow: hidden;
     }
-
     #content #div1 #ul_1 li {
         width: 125px;
         height: 35px;
@@ -49,15 +43,14 @@
         border: 1px solid darkgray;
         box-sizing: border-box;
     }
-
     #content #div1 #ul_2 li {
         width: 125px;
         height: 265px;
+        line-height: 29px;
         float: left;
         border: 1px solid darkgray;
         box-sizing: border-box;
     }
-
     #content #div2 {
         width: 500px;
         height: 300px;
@@ -65,11 +58,9 @@
         margin: 0 auto;
         margin-bottom: 10px;
     }
-
     #content #div2 #ul_3 {
         overflow: hidden;
     }
-
     #content #div2 #ul_3 li {
         width: 125px;
         height: 35px;
@@ -77,21 +68,19 @@
         border: 1px solid darkgray;
         box-sizing: border-box;
     }
-
     #content #div2 #ul_4 li {
         width: 125px;
         height: 265px;
+        line-height: 29px;
         float: left;
         border: 1px solid darkgray;
         box-sizing: border-box;
     }
 </style>
-
 <body>
     <div id="header">
         <div id="header_name">
             <h1>구구단표</h1>
-
         </div>
     </div>
     <div id="content">
@@ -103,10 +92,10 @@
                 <li><h2></h2></li>
             </ul>
             <ul id="ul_2">
-                <li><h3 id="con"></h3></li>
-                <li><h3 id="con"></h3></li>
-                <li><h3 id="con"></h3></li>
-                <li><h3 id="con"></h3></li>
+                <li><h3></h3></li>
+                <li><h3></h3></li>
+                <li><h3></h3></li>
+                <li><h3></h3></li>
             </ul>
         </div>
         <div id="div2">
@@ -125,26 +114,18 @@
         </div>
     </div>
     </div>
-
-   
 </body>
 <script>
-
-    var array=[1,2,3,4,5,6,7,8,9]
     var h2=document.querySelectorAll("h2")
-    for (let i = 0; i < array.length; i++) {
-        h2[i].innerHTML=array[i]+1+"단"
+    for (let i = 0; i < 9; i++) {
+        h2[i].innerHTML=i+2+"단"
     }
-    document.body.appendChild(h2)
-    
-    var h3=document.getElementById("con")
-    h3.innerHTML="dd"
-    document.body.appendChild(h3)
-    
-    
-
-    
-
+    var h3=document.querySelectorAll("h3")
+    for (let j = 2; j <= 9; j++) {
+        for (let i = 1; i <= 9; i++) {
+        var output=j+" * "+i+" = "+j*i+"<br>"
+        h3[j-2].innerHTML+=output
+    }
+    }
         </script>
-
 </html>
