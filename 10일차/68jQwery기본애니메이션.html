@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery-3.6.0.js"></script>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color:orange;
+            position: relative;
+        }
+
+
+    </style>
+</head>
+<body>
+    <button>Toggle Show</button>
+    <div class="page">
+        <h1>예문</h1>
+        <p>이런 하늘에는 것은 이 위에 거외다. 위에 하나에 패, 까닭이요, 이름과 있습니다. 한 쓸쓸함과 지나고 거외다. 같이 멀리 어머니, 된 밤이 별 하나에 이름자를 추억과 봅니다.
+
+            피어나듯이 어머니, 하나에 다하지 버리었습니다. 이름을 나의 어머님, 아직 별 이름과, 별들을 까닭이요, 경, 있습니다. 불러 비둘기, 내 봅니다. 말 피어나듯이 이네들은 이름과, 불러 있습니다.</p>
+    </div>
+    <div id="box"></div>
+    <script>
+//기본적으로 대기열을 만들어서 진행됨
+$("button").click(function () {
+    $("div.page").toggle('slow');
+    $("div.page").slideToggle('slow');
+    $("div.page").fadeToggle('slow');
+})
+
+//.animate({ , }), 
+//clearQue()-대기열제거,애니메이션 연쇄 중지
+// stop(불-clearQue호출? , 불-JumptoEnd?)
+//.delay() 애니메이션사이의 지연시간
+$("div#box").click(function () {
+    $(this).clearQueue()
+    $(this).stop(false, true)
+    $(this).animate({
+        left : "+=50",
+        width : "+=50",
+        height : "+=50"
+    },1500)
+    $(this).delay(1000)
+    $(this).animate({
+        width : "+=50",
+        height : "+=50"
+    },1500)
+    $(this).animate({
+        width : "+=50",
+        height : "+=50"
+    },1500)
+})
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="jquery-3.6.0.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #header {
+      overflow: hidden;
+      margin: 0 auto;
+    }
+
+    #header #button {
+      float: left;
+    }
+
+    #header #search_bar {
+      float: left;
+    }
+
+    #section {
+      overflow: hidden;
+      margin: 0 auto;
+    }
+
+    #side_bar {
+      float: left;
+      visibility: hidden;
+    }
+
+    .clicked #side_bar {
+      float: left;
+      visibility: visible;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header">
+    <div id="button"><img src="image/button.jpg" alt="button"></div>
+    <div id="search_bar"><img src="image/top_bar.jpg" alt="top_bar"></div>
+  </div>
+  <div id="section">
+    <div id="side_bar"><img src="image/side_bar.jpg" alt=""></div>
+    <div id="content"><img src="image/content.jpg" alt=""></div>
+  </div>
+  <script>
+    $(function () {
+      $("#button").click(function () {
+        $("body").toggleClass("clicked")
+      })
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+    <h1>hello</h1>
+    <a href="http://google.com">구글</a>
+
+    <script>
+//이벤트 연결됨
+$("h1").click(function (event) {
+    // $(event.currentTarget).html("클릭!");
+    // 위와 아래는 같은 기능
+    $(this).html("클릭!2");
+})
+// $("h1").click(100, function (event) {
+//     alert("안녕하세요B");
+// })
+$("a").click(function (event) {
+    event.preventDefault() //기본이벤트 제거
+    event.stopPropagation() //이벤트 전달끊음
+    return false //위 두 기능을 동시에
+})
+$("body").click(function (event) {    
+    $(this).css("backgroundColor", "orange")
+})
+//on을 이용한 이벤트
+$("body").on("click", "h1", function (event) {
+    $(this).html("click")
+    $("<h1>").html("hello").appendTo("body")
+})
+    </script>
+</body>
+</html>
