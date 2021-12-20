@@ -2,130 +2,171 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <script src="jquery-3.6.0.js"></script>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="jquery-3.6.0.js"></script>
 </head>
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    li {
-        list-style: none;
-        text-align: center;
-    }
-    #header #header_name {
-        margin: 0 auto;
-        width: 500px;
-        text-align: center;
-        margin-bottom: 15px;
-        border-bottom: 2px solid black;
-        padding-bottom: 5px;
-    }
-    #header #header_name hr {
-        margin-top: 10px;
-    }
-    #content #div1 {
-        width: 500px;
-        height: 300px;
-        border: 1px solid darkgray;
-        margin: 0 auto;
-        margin-bottom: 10px;
-    }
-    #content #div1 #ul_1 {
-        overflow: hidden;
-    }
-    #content #div1 #ul_1 li {
-        width: 125px;
-        height: 35px;
-        float: left;
-        border: 1px solid darkgray;
-        box-sizing: border-box;
-    }
-    #content #div1 #ul_2 li {
-        width: 125px;
-        height: 265px;
-        line-height: 29px;
-        float: left;
-        border: 1px solid darkgray;
-        box-sizing: border-box;
-    }
-    #content #div2 {
-        width: 500px;
-        height: 300px;
-        border: 1px solid darkgray;
-        margin: 0 auto;
-        margin-bottom: 10px;
-    }
-    #content #div2 #ul_3 {
-        overflow: hidden;
-    }
-    #content #div2 #ul_3 li {
-        width: 125px;
-        height: 35px;
-        float: left;
-        border: 1px solid darkgray;
-        box-sizing: border-box;
-    }
-    #content #div2 #ul_4 li {
-        width: 125px;
-        height: 265px;
-        line-height: 29px;
-        float: left;
-        border: 1px solid darkgray;
-        box-sizing: border-box;
-    }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    text-align: center;
+  }
+
+  #header #header_name {
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    margin-bottom: 15px;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+  }
+
+  #header #header_name hr {
+    margin-top: 10px;
+  }
+
+  #content #div1 {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  #content #div1 #ul_1 li {
+    width: 125px;
+    height: 35px;
+    float: left;
+    border: 1px solid darkgray;
+    box-sizing: border-box;
+    border-right: 0;
+    border-bottom: 0;
+  }
+  #content #div1 #ul_1 li:nth-child(4) {
+    width: 125px;
+    height: 35px;
+    float: left;
+    border: 1px solid darkgray;
+    box-sizing: border-box;
+    border-right: 1px solid darkgray;
+    border-bottom: 0;
+  }
+  
+  #content #div1 #ul_2 li {
+    width: 125px;
+    height: 265px;
+    line-height: 29px;
+    float: left;
+    border: 1px solid darkgray;
+    box-sizing: border-box;
+    border-right: 0;
+  }
+  #content #div1 #ul_2 li:nth-child(4) {
+    width: 125px;
+    height: 265px;
+    line-height: 29px;
+    float: left;
+    border: 1px solid darkgray;
+    box-sizing: border-box;
+    border-right: 1px solid darkgray;
+  }
+  #content #div1 #ul_3 li {
+    width: 125px;
+    height: 35px;
+    float: left;
+    border: 1px solid darkgray;
+    box-sizing: border-box;
+    border-right: 0;
+    border-bottom: 0;
+  }
+  #content #div1 #ul_3 li:nth-child(4) {
+    width: 125px;
+    height: 35px;
+    float: left;
+    border: 1px solid darkgray;
+    box-sizing: border-box;
+    border-right: 1px solid darkgray;
+    border-bottom: 0;
+  }
+  
+  #content #div1 #ul_4 li {
+    width: 125px;
+    height: 265px;
+    line-height: 29px;
+    float: left;
+    border: 1px solid darkgray;
+    box-sizing: border-box;
+    border-right: 0;
+  }
+  #content #div1 #ul_4 li:nth-child(4) {
+    width: 125px;
+    height: 265px;
+    line-height: 29px;
+    float: left;
+    border: 1px solid darkgray;
+    box-sizing: border-box;
+    border-right: 1px solid darkgray;
+  }
+  
+  p {
+    visibility: hidden;
+    font-size: 1px;
+  }
+
+  
 </style>
+
 <body>
-    <div id="header">
-        <div id="header_name">
-            <h1>구구단표</h1>
-        </div>
+  <div id="header">
+    <div id="header_name">
+      <h1>구구단표</h1>
     </div>
-    <div id="content">
-        <div id="div1">
-            <ul id="ul_1">
-                <li><h2></h2></li>
-                <li><h2></h2></li>
-                <li><h2></h2></li>
-                <li><h2></h2></li>
-            </ul>
-            <ul id="ul_2">
-                <li><h3></h3></li>
-                <li><h3></h3></li>
-                <li><h3></h3></li>
-                <li><h3></h3></li>
-            </ul>
-        </div>
-        <div id="div2">
-            <ul id="ul_3">
-                <li><h2></h2></li>
-                <li><h2></h2></li>
-                <li><h2></h2></li>
-                <li><h2></h2></li>
-            </ul>
-            <ul id="ul_4">
-                <li><h3></h3></li>
-                <li><h3></h3></li>
-                <li><h3></h3></li>
-                <li><h3></h3></li>
-            </ul>
-        </div>
+  </div>
+  <div id="content">
+    <div id="div1">
+      <ul id="ul_1">
+        <li><h2></h2></li>
+        <li><h2></h2></li>
+        <li><h2></h2></li>
+        <li><h2></h2></li>
+      </ul>
+      <ul id="ul_2">
+        <li><h3></h3></li>
+        <li><h3></h3></li>
+        <li><h3></h3></li>
+        <li><h3></h3></li>
+      </ul>
+      <p>dd</p>
+      <ul id="ul_3">
+        <li><h2></h2></li>
+        <li><h2></h2></li>
+        <li><h2></h2></li>
+        <li><h2></h2></li>
+      </ul>
+      <ul id="ul_4">
+        <li><h3></h3></li>
+        <li><h3></h3></li>
+        <li><h3></h3></li>
+        <li><h3></h3></li>
+      </ul>
     </div>
-    </div>
+  </div>
+  </div>
 </body>
 <script>
-    var h2=$("h2")
-    for (let i = 2; i <= 9; i++) {
-      $(h2[i-2]).html(i + "단")
+  var h2 = $("h2")
+  for (let i = 2; i <= 9; i++) {
+    $(h2[i - 2]).html(i + "단")
+  }
+  var h3 = document.querySelectorAll("h3")
+  for (let j = 2; j <= 9; j++) {
+    for (let i = 1; i <= 9; i++) {
+      var output = j + " * " + i + " = " + j * i + "<br>"
+      h3[j - 2].innerHTML += output
     }
-    var h3=document.querySelectorAll("h3")
-    for (let j = 2; j <= 9; j++) {
-        for (let i = 1; i <= 9; i++) {
-        var output=j + " * " + i + " = "+ j * i +"<br>"
-        h3[j-2].innerHTML+=output
-    }
-    }
-        </script>
+  }
+</script>
+
 </html>
