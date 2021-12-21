@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<style>
+  /* 
+  offset-x: 수평그림자의 offset값
+  offset-y: 수직그림자의 offset값
+  blur : 그림자 가장자리 블러처리
+  color : 그림자 색상
+  inset : 안쪽 그림자 */
+div {
+  background-color: #ccc;
+  width: 250px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 5px;
+  float: left;
+}
+.box1 {
+  box-shadow: 5px 5px 20px rgb(72, 61, 61);
+}
+.box2 {
+  box-shadow: 0 0 20px rgb(72, 61, 61);
+}
+.box3 {
+  box-shadow: 10px 10px 0 crimson;
+}
+.box4 {
+  box-shadow: inset 00px 0px 20px rgb(72, 61, 61);
+}
+.box5 {
+  box-shadow: inset 0px 0px 20px white;
+}
+.box6 {
+  box-shadow: inset 0px 0px 20px black;
+}
+
+
+</style>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+<div class="box4"></div>
+<div class="box5"></div>
+<div class="box6"></div>
+
+  
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+/* 
+inline요소 가운데 정렬-부모요소에 text align
+block요소 가운데 정렬-margin auto
+float요소는 상속되는게 기본값
+clear:both로 해제
+*/
+.parent {
+  border: 5px solid red;
+  width: 600px;
+  overflow: hidden;
+  text-align: center;
+}
+.child {
+  background-color: gold;
+  width: 200px;
+  height: 100px;
+  display: block;
+}
+
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <span class="child"></span>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .box {
+      border: 5px solid black;
+      text-align: center;
+    }
+    .box div {
+      border: 5px solid black;
+      margin: 10px;
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+      
+    }
+    /* 
+    nth-child()는 태그를 체크하지않고 순서적용
+    nth-of-type()은 태그 체크하고 적용 */
+    .box div:nth-of-type(1) {
+      background-color: dodgerblue;
+    }
+    .box div:nth-of-type(2) {
+      background-color:red;
+    }
+    .box div:nth-of-type(3) {
+      background-color:white;
+    }
+    .box div:nth-of-type(4) {
+      background-color:gold;
+    }
+
+  </style>
+</head>
+
+<body>
+<div class="box">
+  <h2>header</h2>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+</body>
+
+</html>
