@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    /* 선택자 우선순위
+1.!important Style 
+2.Inline style
+3.ID
+4.Class
+5.Tag
+*/
+h1 {
+  color: red ;
+}
+.text {
+  color: blue;
+}
+#text {
+  color: green;
+}
+
+  </style>
+</head>
+<body>
+  <h1>태그</h1>
+  <h1 class="text">클래스</h1>
+  <h1 class="text" id="text">아이디</h1>
+  <h1 class="text" id="text" style="color: gold;">인라인</h1>
+  <h1>!important</h1>
+</body>
+</html>

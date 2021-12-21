@@ -1,0 +1,17 @@
+.parent {
+  border: 1px solid red;
+  width: 400px;
+  height: 400px;
+}
+/* '>'는 바로 밑에 있는것만 선택 */
+.parent > div {
+  border: 1px solid blue;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+.parent > div div {
+  background-color: black;
+  width: 50px;
+  height: 50px;
+}
