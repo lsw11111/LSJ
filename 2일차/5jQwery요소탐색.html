@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="script/jquery-3.6.0.js"></script>
+  <script src="script/5.js"></script>
+  <style>
+a {
+  text-decoration: none;
+}
+.menu {
+  padding: 0;
+  overflow: hidden;
+  width: 200px;
+  
+}
+.menu li > a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 5px;
+
+}
+li a {
+  background-color: black;
+  color: white;
+}
+.menu .sub-menu > a {
+  background-color: #fff;
+  display: block;
+  text-align: center;
+  color: #000;
+  padding: 5px;
+}
+.menu li .sub-menu {
+  border: 1px solid black;
+  display: none;
+}
+
+
+  </style>
+</head>
+<body>
+  <ul class="menu">
+    <li>
+      <a href="#none">menu-1</a>
+      <div class="sub-menu">
+        <a href="#none">sub-menu1</a>
+        <a href="#none">sub-menu1</a>
+        <a href="#none">sub-menu1</a>
+        <a href="#none">sub-menu1</a>
+      </div>
+    </li>
+    <li>
+      <a href="#none">menu-2</a>
+      <div class="sub-menu">
+        <a href="#none">sub-menu2</a>
+        <a href="#none">sub-menu2</a>
+        <a href="#none">sub-menu2</a>
+        <a href="#none">sub-menu2</a>
+      </div>
+    </li>
+  </ul>
+
+</body>
+</html>
