@@ -1,0 +1,51 @@
+body {
+  line-height: 1.5em;
+  font-weight: 300;
+  margin: 0;
+}
+.container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.icon {
+  width: 125px;
+  height: 125px;
+  margin: 10px;
+  position: relative;
+}
+.icon span {
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  width: 200px;
+  top: -45px;
+  padding: 5px;
+  border-radius: 5px;
+  transform: translateX(-80%);
+  /* display: none; */
+  /* opacity: 0;
+  transition: 0.3s; */
+  visibility: hidden;
+}
+.icon:hover span {
+  /* display: inline-block; */
+  /* opacity: 1; */
+  visibility: visible;
+}
+/* position:absolute 가 되면 인라인 블록형태가 됨 */
+.icon span:after {
+  content:' ';
+  position: absolute;
+  background-color: red;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg) translate(-50%);
+  bottom: -6px;
+  left: 50%;
+  background-color: black;
+}
+/* 
+span:after는 span의 자식요소로 position absolute를 준다 */

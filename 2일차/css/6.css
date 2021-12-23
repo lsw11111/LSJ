@@ -1,8 +1,6 @@
 body {
-  font-family: serif;
   line-height: 1.5em;
   margin: 0;
-  font-weight: 300;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +15,7 @@ body {
   height: 20px;
   background-color: gray;
   border-radius: 50%;
-  animation: loading 1s 0s linear infinite;
+  animation: loading 1s linear infinite;
 
 }
 .loading span:nth-child(1) {

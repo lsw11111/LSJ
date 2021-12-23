@@ -1,0 +1,49 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
+body {
+  line-height: 1.5em;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.gnb {
+  list-style: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.302);
+  padding: 0;
+  margin: 0;
+  width: 600px;
+  padding: 30px 30px;
+  display: flex;
+}
+.gnb li {
+  /* float: left;
+  width: 120px;
+  text-align: center;   */
+  flex: 1;
+  text-align: center;
+}
+.gnb li a{
+  font-size: 14px;
+  position: relative;
+}
+.gnb li a:before {
+  content: '';
+  position: absolute;
+  background-color: dodgerblue;
+  height: 2px;
+  width: 0;
+  bottom: -10px;
+  transition: 0.3s;
+  /* right: 0; 오른쪽부터 시작*/
+  left: 50%;
+  transform: translateX(-50%);
+}
+.gnb li a:hover:before {
+  width: 100%;
+}

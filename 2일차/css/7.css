@@ -12,6 +12,7 @@ body {
   width: 30px;
   height: 30px;
   position: relative;
+  /* border: 1px solid red; */
 }
 .loading span {
   position: absolute;
