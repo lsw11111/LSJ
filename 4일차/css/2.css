@@ -1,0 +1,67 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
+body {
+  font-weight: 300;
+  line-height: 1.5em;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+}
+.wrap {
+  width: 500px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #333;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.302);
+  text-align: center;
+  
+}
+.item {
+}
+.item p {
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.item p span:nth-child(1) {
+  float: left;
+}
+.item p span:nth-child(2) {
+  float: right;
+}
+.bar {
+  border: 1px solid #6cd4c4;
+  padding: 3px;
+  border-radius: 2px;
+}
+.bar .progress-level {
+  height: 10px;
+  background:linear-gradient(to right,crimson,gold);
+  animation: ani 1s;
+  animation-fill-mode: both;
+}
+/* 100%로 갔다가 100%에 머무르라는 코드 */
+.wrap .item:nth-of-type(1) .progress-level {
+  animation-delay: 0s;
+}
+.wrap .item:nth-of-type(2) .progress-level {
+  animation-delay: 0.2s;
+}
+.wrap .item:nth-of-type(3) .progress-level {
+  animation-delay: 0.4s;
+}
+.wrap .item:nth-of-type(4) .progress-level {
+  animation-delay: 0.6s;
+}
+.wrap .item:nth-of-type(5) .progress-level {
+  animation-delay: 0.8s;
+}
+/* nth-child는 태그를 체크하지 않음
+nth of type은 태그를 체크하고 적용 */
+
+@keyframes ani {
+  0% {
+    width: 0;
+  }
+}

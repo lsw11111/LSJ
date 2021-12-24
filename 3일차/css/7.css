@@ -41,7 +41,7 @@ a {
   bottom: -10px;
   transition: 0.3s;
   /* right: 0; 오른쪽부터 시작*/
-  left: 50%;
+  left: 50%; 
   transform: translateX(-50%);
 }
 .gnb li a:hover:before {
