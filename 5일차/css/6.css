@@ -1,0 +1,43 @@
+body {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; */
+}
+.custom input[type=checkbox] {
+  display: none;
+}
+.custom label em {
+  /* border: 1px solid red; */
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  background: url(/image/checkbox-02.png) no-repeat;
+  background-position: left center;
+}
+.custom input[type=checkbox]:checked ~ label em {
+  background: url(/image/checkbox-02.png) no-repeat;
+  background-position: right center;
+}
+.grade input[type=radio] {
+  display: none;
+}
+.grade label em {
+  /* border: 1px solid red; */
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(/image/radio-01.png) no-repeat; 
+  background-position: left center;
+  margin-right: 5px;
+}
+.grade input[type=radio]:checked + label em {
+  background: url(/image/radio-01.png);
+  background-position: right center;
+}
+.grade input[type=radio]:checked + label {
+  color: crimson;
+}
