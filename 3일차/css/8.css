@@ -30,7 +30,6 @@ body {
   position: absolute;
   width: 0;
   height: inherit;
-  background-color: blue;
   top: 0;
   left: 0;
   transition: 0.3s;
@@ -54,10 +53,10 @@ body {
   background-color: #e4405f;
 }
 .sns a .fab {
-  position: relative;
+  /* position: relative; */
   transition: 0.5s;
 }
 .sns a:hover .fab {
-  transform: rotateY(360deg);
+  transform: rotateX(360deg);
   color: #fff;
 }

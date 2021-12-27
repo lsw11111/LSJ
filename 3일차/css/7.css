@@ -31,6 +31,7 @@ a {
 .gnb li a{
   font-size: 14px;
   position: relative;
+  /* padding: 15px; */
 }
 .gnb li a:before {
   content: '';
@@ -41,8 +42,8 @@ a {
   bottom: -10px;
   transition: 0.3s;
   /* right: 0; 오른쪽부터 시작*/
-  left: 50%; 
-  transform: translateX(-50%);
+  left: 50%;
+  transform: translateX(-50%); 
 }
 .gnb li a:hover:before {
   width: 100%;

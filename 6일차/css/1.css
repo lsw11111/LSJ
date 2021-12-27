@@ -1,0 +1,43 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+form input[type=checkbox] {
+  display: none;
+}
+label {
+  display: block;
+}
+label:before{
+  display: inline-block;
+  content: '\f00c';
+  font-family: fontawesome;
+  margin-right: 5px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  font-size: 16px;
+  vertical-align: middle;
+  line-height: 20px;
+  text-align: center;
+  color: transparent;
+  transition: 0.2s;
+}
+/* 
+폰트어썸을 적용하려면 반드시 font-family:awesome입력 */
+input[type=checkbox]:checked + label:before {
+  background-color: crimson;
+  color: white;
+  border: 0;
+}
+input[type=checkbox] + label:active:before {
+  transform: scale(0);
+}
+/* :active는 마우스를 누르고 있는 상태 */
