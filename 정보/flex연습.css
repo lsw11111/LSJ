@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 5px;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: start;
+}
+.box {
+  background-color: rgb(34, 185, 232);
+  width: 100px;
+  height: 200px;
+  margin-right: 5px;
+  flex: 2;
+}
+.text {
+  align-self: start;
+  flex: 1;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/6.css">
+  <script src="/script/jquery-3.6.0.js"></script>
+</head>
+<body>
+  <h1>코딩웍스~</h1>
+  <input type="text" placeholder="What ~ looking for?">
+  <section>
+    <ul class="btn">
+      <li data-alt="tab1" class="active">HTML 5</li>
+      <li data-alt="tab2">CSS 3</li>
+      <li data-alt="tab3">JQWeRY</li>
+      <li data-alt="tab4">JAVASCRIPT</li>
+      <li data-alt="tab5">CSS framework</li>
+    </ul>
+    <div class="tabs">
+      <div class="tab1 active">tab1</div>
+      <div class="tab2">tab2</div>
+      <div class="tab3">tab3</div>
+      <div class="tab4">tab4</div>
+      <div class="tab5">tab5</div>
+    </div>
+  </section>
+
+
+
+  <script>
+    $('.btn li').click(function() {
+      $(this).addClass('active')
+      $(this).siblings('li').removeClass('active')
+      
+      var tabNumber = $(this).attr('data-alt')
+      $('.' + tabNumber).addClass('active')
+      $('.' + tabNumber).siblings().removeClass('active')
+      
+    })
+
+
+  </script>
+</body>
+</html>

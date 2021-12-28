@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: 100vh;
+  display: flex;
+}
+.item {
+  width: 100px;
+  height: 100px;
+}
+.item1 {
+  background-color: rgb(45, 204, 40);
+  flex-grow: 1;
+  /* 부모요소의 width에서 생기는 여백을 채움(자신의 width값 무시), 비율지정 가능 */
+  flex-shrink: 2;
+  /* 브라우저 사이즈가 줄어들때 다른 요소보다 2배 더 많이 줄어듬 */
+  flex-basis: 60%;
+  /* %로 비율 지정 */
+  align-self: flex-end;
+  /* y축 위치 지정 */
+}
+.item2 {
+  background-color: crimson;
+  flex-grow: 1;
+  flex-basis: 30%;
+}
+.item3 {
+  background-color: darkorange;
+  flex-grow: 1;
+  flex-basis: 10%;
+}

@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: beige;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  /* 방향설정: row(기본), row-reverse, column, column-reverse */
+  
+  flex-wrap: wrap;
+  /* wrap설정: nowrap(기본-넘쳐도 그줄에서 안내려감), wrap, wrap-reverse */
+
+  justify-content: space-evenly;
+  /* x축 설정: flex-start(기본), center, flex-end(순서유지,오른쪽배치) */
+  /* space-around(margin비슷한 개념), space-evenly( 다 똑같이)
+  space-between(왼쪽끝, 오른쪽끝 여백없이 간격을 줌) */
+
+  align-items: baseline;
+  /* baseline(텍스트기준으로 정렬) */
+
+  align-content: flex-start;
+  /* y축 설정: justyfy-content의 것과 같음 */
+}
+.item {
+  width: 100px;
+  height: 100px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 100px;
+}
+.item1 {
+  background-color: #b388ff;
+}
+.item2 {
+  background-color: #ad1457;
+}
+.item3 {
+  background-color: #48b864;
+}
+.item4 {
+  background-color: #0f9b60;
+}
+.item5 {
+  background-color: #f5986d;
+}
+.item6 {
+  background-color: #4ac44a;
+}
+.item7 {
+  background-color: #ac2424;
+}
+.item8 {
+  background-color: #e41ad3;
+}
+.item9 {
+  background-color: #6c7fcc;
+}
+.item10 {
+  background-color: #abe71d;
+}

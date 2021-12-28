@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+h1 {
+  width: 500px;
+  height: 80px;
+  border-bottom: 1px solid darkgrey;
+  text-align: center;
+  line-height: 80px;
+  margin-bottom: 20px;
+}
+.login {
+  width: 500px;
+  height: 150px;
+  border: 1px solid black;
+  text-align: center;
+}
+.login h2 {
+  margin: 25px;
+}
+input[type=text] {
+  padding: 5px;
+  box-sizing: border-box;
+  margin-right: 5px;
+}
+button {
+  padding: 7px;
+  background-color: lightgrey;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
