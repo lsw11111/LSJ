@@ -1,40 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
 * {
   margin: 0;
   padding: 0;
 }
 body {
-  background-color: lightgray;
-  font-family: 'Noto Sans KR', sans-serif;
-  font-weight: 300;
-  line-height: 1.5em;
-}
-header {
-  margin: 20px auto;
-  width: 800px;
-}
-header h1 {
-  margin-bottom: 20px;  
-}
-header h1 span {
-  color: red;
-}
-header input[type=text] {
-  width: 800px;
-  padding: 15px;
-  box-sizing: border-box;
-  outline: none;
-  border: none;
-  border-bottom: 1px solid darkgray;
-  background: #fff url(/images/search-icon.png) no-repeat center left 10px;
-  background-size: 23px;
-  padding-left: 40px;
-}
-header input[type=text]::placeholder {
-  font-style: italic;
-}
-header input[type=text]:focus::placeholder {
-  visibility: hidden;
+  background-color: rgba(255, 255, 255, 0.919);
 }
 section {
   margin: 0 auto;
@@ -52,39 +21,24 @@ section {
   line-height: 30px;
   text-align: center;
   background-color:gray;
-  border-right: 1px solid #ddd;
-  cursor: pointer;
-  border-top: 2px solid transparent;
+  border: 1px solid darkgray;
 }
 .btn li:nth-child(5) {
   width: 130px;
 }
 .tabs {
-  width: 800px;
+  width: inherit;
+  border: 1px solid red;
+  box-sizing: border-box;
+  height: 300px;
 }
 .tabs div {
-  width: inherit;
+  height: 300px;
   display: none;
-  background-color: #fff;
-  padding: 20px;
-  box-sizing: border-box;
 }
 .tabs div.active {
   display: block;
 }
-.tabs div h2 {
-  text-align: center;
-  padding: 20px 0;
-}
-.tabs img {
-  float: left;
-  margin-right: 15px;
-}
-.tabs p {
-  overflow: hidden;
-}
-.btn li:hover,
 .btn li.active {
-  border-top: 2px solid crimson;
   background-color: #fff;
 }

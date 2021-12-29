@@ -29,10 +29,6 @@ input[type=text] {
   padding: 5px;
   box-sizing: border-box;
   margin-right: 5px;
-  outline: none;
-}
-input[type=text]:focus::placeholder {
-  visibility: hidden;
 }
 button {
   padding: 7px;

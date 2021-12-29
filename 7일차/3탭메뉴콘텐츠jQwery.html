@@ -5,6 +5,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="/css/3.css">
   <script src="/script/jquery-3.6.0.js"></script>
+  <script src="/script/3.js"></script>
 </head>
 <body>
   <div class="container">
@@ -39,16 +40,5 @@
       </div>
     </div>
   </div>
-  <script>
-      $('.container .pic img').click(function() {
-    $(this).addClass('active')
-    $(this).siblings().removeClass('active')
-    
-    var imgOrder = $(this).attr('data-alt')
-    $('#' + imgOrder).addClass('active')
-    $('#' + imgOrder).siblings().removeClass('active')
-  })
-
-  </script>
 </body>
 </html>
