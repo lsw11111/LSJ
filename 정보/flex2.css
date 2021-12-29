@@ -12,7 +12,7 @@
 }
 .item1 {
   background-color: rgb(45, 204, 40);
-  flex-grow: 1;
+  flex-grow: 2;
   /* 부모요소의 width에서 생기는 여백을 채움(자신의 width값 무시), 비율지정 가능 */
   flex-shrink: 2;
   /* 브라우저 사이즈가 줄어들때 다른 요소보다 2배 더 많이 줄어듬 */

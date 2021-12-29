@@ -7,8 +7,11 @@
   <script src="/script/jquery-3.6.0.js"></script>
 </head>
 <body>
-  <h1>코딩웍스~</h1>
-  <input type="text" placeholder="What ~ looking for?">
+  <header>
+    <h1><span>코딩웍스</span>, 프론트엔드 ~</h1>
+    <input type="text" placeholder="What ~ looking for?">
+  </header>
+
   <section>
     <ul class="btn">
       <li data-alt="tab1" class="active">HTML 5</li>
@@ -18,15 +21,35 @@
       <li data-alt="tab5">CSS framework</li>
     </ul>
     <div class="tabs">
-      <div class="tab1 active">tab1</div>
-      <div class="tab2">tab2</div>
-      <div class="tab3">tab3</div>
-      <div class="tab4">tab4</div>
-      <div class="tab5">tab5</div>
+      <div class="tab1 active">
+        <h2>HTML5</h2>
+        <img src="/images/platform-logo-01.png" alt="">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat modi, fugit at illum quasi doloribus exercitationem porro alias soluta repellat earum ipsum accusantium, pariatur vero quae fugiat reprehenderit, asperiores sequi iste harum veritatis maiores dolorem. Incidunt nulla quo eveniet, optio quaerat dignissimos odio ad, cumque voluptates maxime doloribus laborum illo, impedit perspiciatis nobis non numquam! Molestias assumenda dolore quibusdam magni recusandae hic, natus repellat incidunt sunt, placeat impedit cumque minima deleniti eaque numquam rem porro? Incidunt, nesciunt necessitatibus quas non excepturi, dolorem optio molestias suscipit assumenda ea perspiciatis, a laboriosam inventore id fugit in ipsa architecto officia similique quisquam!
+        </p>
+      </div>
+      <div class="tab2"><h2>CSS 3</h2>
+        <img src="/images/platform-logo-02.png" alt="">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat modi, fugit at illum quasi doloribus exercitationem porro alias soluta repellat earum ipsum accusantium, pariatur vero quae fugiat reprehenderit, asperiores sequi iste harum veritatis maiores dolorem. Incidunt nulla quo eveniet, optio quaerat dignissimos odio ad, cumque voluptates maxime doloribus laborum illo, impedit perspiciatis nobis non numquam! Molestias assumenda dolore quibusdam magni recusandae hic, natus repellat incidunt sunt, placeat impedit cumque minima deleniti eaque numquam rem porro? Incidunt, nesciunt necessitatibus quas non excepturi, dolorem optio molestias suscipit assumenda ea perspiciatis, a laboriosam inventore id fugit in ipsa architecto officia similique quisquam!
+        </p></div>
+      <div class="tab3"><h2>jQwery</h2>
+        <img src="/images/platform-logo-03.png" alt="">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat modi, fugit at illum quasi doloribus exercitationem porro alias soluta repellat earum ipsum accusantium, pariatur vero quae fugiat reprehenderit, asperiores sequi iste harum veritatis maiores dolorem. Incidunt nulla quo eveniet, optio quaerat dignissimos odio ad, cumque voluptates maxime doloribus laborum illo, impedit perspiciatis nobis non numquam! Molestias assumenda dolore quibusdam magni recusandae hic, natus repellat incidunt sunt, placeat impedit cumque minima deleniti eaque numquam rem porro? Incidunt, nesciunt necessitatibus quas non excepturi, dolorem optio molestias suscipit assumenda ea perspiciatis, a laboriosam inventore id fugit in ipsa architecto officia similique quisquam!
+        </p></div>
+      <div class="tab4"><h2>JavaScript</h2>
+        <img src="/images/platform-logo-04.png" alt="">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat modi, fugit at illum quasi doloribus exercitationem porro alias soluta repellat earum ipsum accusantium, pariatur vero quae fugiat reprehenderit, asperiores sequi iste harum veritatis maiores dolorem. Incidunt nulla quo eveniet, optio quaerat dignissimos odio ad, cumque voluptates maxime doloribus laborum illo, impedit perspiciatis nobis non numquam! Molestias assumenda dolore quibusdam magni recusandae hic, natus repellat incidunt sunt, placeat impedit cumque minima deleniti eaque numquam rem porro? Incidunt, nesciunt necessitatibus quas non excepturi, dolorem optio molestias suscipit assumenda ea perspiciatis, a laboriosam inventore id fugit in ipsa architecto officia similique quisquam!
+        </p></div>
+      <div class="tab5"><h2>CSS Frameworks</h2>
+        <img src="/images/platform-logo-05.png" alt="">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat modi, fugit at illum quasi doloribus exercitationem porro alias soluta repellat earum ipsum accusantium, pariatur vero quae fugiat reprehenderit, asperiores sequi iste harum veritatis maiores dolorem. Incidunt nulla quo eveniet, optio quaerat dignissimos odio ad, cumque voluptates maxime doloribus laborum illo, impedit perspiciatis nobis non numquam! Molestias assumenda dolore quibusdam magni recusandae hic, natus repellat incidunt sunt, placeat impedit cumque minima deleniti eaque numquam rem porro? Incidunt, nesciunt necessitatibus quas non excepturi, dolorem optio molestias suscipit assumenda ea perspiciatis, a laboriosam inventore id fugit in ipsa architecto officia similique quisquam!
+        </p></div>
     </div>
   </section>
-
-
 
   <script>
     $('.btn li').click(function() {
@@ -34,11 +57,11 @@
       $(this).siblings('li').removeClass('active')
       
       var tabNumber = $(this).attr('data-alt')
+      // $('.tabs div').removeClass('active')
       $('.' + tabNumber).addClass('active')
       $('.' + tabNumber).siblings().removeClass('active')
       
     })
-
 
   </script>
 </body>
