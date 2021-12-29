@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 4em;
+}
+.nav {
+
+}
+.nav li {
+
+}
+.nav li a {
+  position: relative;
+}
+.nav li a:after {
+  position: absolute;
+  content: attr(data-text);
+  top: 0;
+  left: 0;
+  color: yellowgreen;
+  width: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+/* overflow: hidden?  */
+.nav li a:hover:after {
+  width: 100%;
+}
+.photo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+  background-image: url(/image/portrait-initial.jpg);
+  background-position: center center;
+  background-size: cover;
+  transition: 0.5s;
+}

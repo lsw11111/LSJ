@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  color: #222;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+section article {
+  width: 980px;
+}
+.header {
+  text-align: center;
+  
+}
+.header span {
+  color: red;
+  font-size: 20px;
+  display: block;
+}
+.header h1 {
+  font-size: 30px;
+}
+.header h1 em {
+  font-style: normal;
+  position: relative;
+}
+.header h1 em::after {
+  content: url(/image/logo-kakao.png);
+  position: absolute;
+  top: -25px;
+  right: -30px;
+}
+.content {
+  margin-top: 30px;
+  
+}
+.content > div {
+  box-sizing: border-box;
+  width: 50%;
+  height: 100px;
+  float: left;
+}
+.content .accordian{
+  
+}
+.accordian .title {
+  border: 1px solid lightgray;
+  padding: 7px;
+  padding-left: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-bottom: 5px;
+}
+.title::after {
+  content: '\f105';
+  font-family: fontawesome;
+  float: right;
+  margin-top: 5px;
+  margin-right: 5px;
+  transition: 0.2s;
+}
+.title:hover,
+.title.active {
+  background-color: #203049;
+  color: #fff;
+}
+.title.active::after {
+  transform: rotate(90deg);
+  color: orange;
+}
+.accordian .desc {
+  padding: 15px;
+  box-sizing: border-box;
+  display: none;
+}
+.desc.active {
+  display: block;
+}
+.content .image img {
+}
