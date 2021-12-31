@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  background-color: #ddd;
+
+}
+header {
+  height: 60px;
+  background-color: #fff;
+  text-align: center;  
+  border-bottom: 1px solid lightgray;
+  padding-top: 12px;
+  box-sizing: border-box;
+}
+section {
+  /* border: 1px solid red; */
+  height: calc(100vh - 60px);
+  position: relative;
+}
+.login {
+  /* border: 1px solid red; */
+  width: 360px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.login h1 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.login-type a {
+  border: 1px solid lightgray;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.8;
+}
+.login-type a:hover {
+  opacity: 1;
+}
+.login-type a:nth-of-type(1) {
+  color:black;
+  background-color: #fff;
+  background-image: url(/image/logo-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center left 6px;
+}
+.login-type a:nth-of-type(2) {
+  background: #898c9b url(/image/logo-email.png) no-repeat center left 10px;
+}
+.login-type a:nth-of-type(3) {
+  background: #11ce00 url(/image/logo-naver.png) no-repeat center left 10px;
+  
+}
+.login-type a:nth-of-type(4) {
+  background: #0076fe url(/image/logo-facebook.png) no-repeat center left 10px;
+}
+.login-type a:nth-of-type(5) {
+  background: #00c026 url(/image/logo-line.png) no-repeat center left 8px;
+}
+.login-type .or {
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+  position: relative;
+}
+.or::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 0;
+  background-color: darkgray;
+  height: 1px;
+  width: 43%;
+}
+.or::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: 0;
+  background-color: darkgray;
+  height: 1px;
+  width: 43%;
+}
+.login-footer p {
+  margin-top: 15px;
+  text-align: center;
+}
+.login-footer p a {
+  font-weight: 600;
+}

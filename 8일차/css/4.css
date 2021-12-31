@@ -14,15 +14,208 @@ a {
   text-decoration: none;
   color: #000;
 }
-.vidio-frame {}
+/* 비디오  로고 */
+.video-frame:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  background: linear-gradient(to left, crimson, transparent);
+  z-index: -1;
+  
+}
 .video-frame video {
   position: fixed;
   min-width: 100%;
   min-height: 100%;
-  z-index: -1;
+  z-index: -2;
 }
 .logo {
   position: absolute;
   top: 50px;
   left: 100px;
+  z-index: -1;
+}
+/* 글귀 heading */
+.heading {
+  position: absolute;
+  width: 700px;
+  left: 100px;
+  bottom: 100px;
+  color: #fff;
+  animation: showing 2s 1s linear;
+  animation-fill-mode: both;
+  z-index: -1;
+}
+.heading h1 {
+  margin-bottom: 15px;
+}
+.heading h1 span {
+  display: block;
+  color: crimson;
+}
+.heading p {
+  margin-bottom: 20px;
+}
+.heading a {
+  display: inline-block;
+  border: 1px solid white;
+  width: 120px;
+  text-align: center;
+  color: #fff;
+  line-height: 25px;
+  height: 25px;
+  background-color: transparent;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+.heading a:nth-of-type(1) {
+  color: #000;
+  background-color: #fff;
+  margin-right: 5px;
+}
+.heading a:nth-of-type(1):hover {
+  background-color: #000;
+  color: white;
+  border: 1px solid #000;
+}
+.heading a:nth-of-type(2):hover {
+  background-color: #fff;
+  color: black;
+}
+/* 애니버서리 */
+.anniversary {
+  position: absolute;
+  right: 100px;
+  bottom: 50px;
+  text-align: center;
+  animation: showing2 2s 1s linear;
+}
+.anniversary em {
+  font-style: normal;
+  display: block;
+  font-size: 20px;
+  margin-bottom: -15px;
+  letter-spacing: 2px;
+}
+.anniversary span {
+  font-family: 'Monoton', cursive;
+  font-size: 100px;
+}
+@keyframes showing {
+  0% {
+    opacity: 0;
+    margin-left: -100px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+@keyframes showing2 {
+  0% {
+    opacity: 0;
+    margin-right: -100px;
+  }
+  100% {
+    opacity: 1;
+    margin-right: 0;
+  }
+}
+/* 트리거(햄버거 버튼) */
+.trigger {
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+  z-index: 11111;
+}
+.trigger.active span {
+  background-color: #fff;
+  transition: 0.2s;
+}
+.trigger.active span:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+.trigger.active span:nth-child(2) {
+  opacity: 0;
+}
+.trigger.active span:nth-child(3) {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+.trigger span {
+  position: absolute;
+  width: inherit;
+  height: 2px;
+  background-color: #000;
+  transition: 0.2s;
+}
+.trigger span:nth-child(1) {
+  top: 0;
+}
+.trigger span:nth-child(2) {
+  top: 50%;
+  width: 80%;
+}
+.trigger span:nth-child(3) {
+  top: 100%;
+}
+/* 모달창 */
+.modal-gnb {
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100vh;
+  display: none;
+  z-index: 5555;
+}
+.modal-gnb .gnb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.modal-gnb .gnb a {
+  color: #fff;
+  font-size: 60px;
+  display: block;
+  padding: 10px;
+  font-family: 'Raleway', sans-serif;
+  animation: gnb 1.5s linear;
+  animation-fill-mode: both;
+  opacity: 0;
+  transition: 0.3s;
+}
+.gnb a:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.gnb a:nth-child(2) {
+  animation-delay: 0.7s;
+}
+.gnb a:nth-child(3) {
+  animation-delay: 0.9s;
+}
+.gnb a:nth-child(4) {
+  animation-delay: 1.1s;
+}
+.gnb a:nth-child(5) {
+  animation-delay: 1.3s;
+}
+.modal-gnb .gnb a:hover {
+  color: crimson;
+}
+@keyframes gnb {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1
+  }
 }

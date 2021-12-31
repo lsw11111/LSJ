@@ -14,8 +14,41 @@
     <div class="logo">
       <img src="/image/logo.png">
     </div>
+    <div class="heading">
+      <h1><span>Wave Ocean</span> The World's Ocean</span></h1>
+      <p>
+        The Atlantic Ocean is situated between the Americas and European/African continents. Atlantic Ocean is the second largest and saltiest ocean in the world. It resembles an S-shape between the Americas, Europe and Africa. “Atlantic” originated from the Greek god “Atlas” who carried the sky for eternity.
+      </p>
+      <a href="#">Book Now</a>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="anniversary">
+      <em>Anniversary</em><span>60</span>
+    </div>
+    <div class="trigger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="modal-gnb">
+      <div class="gnb">
+        <a href="">Attractions</a>
+        <a href="">Hotels & Spa</a>
+        <a href="">Shop & Dine</a>
+        <a href="">Celebrate</a>
+        <a href="">Promotions</a>
+      </div>
+    </div>
   </div>
+  <audio id=audio src="/image/piano-bgm.mp3" autoplay loop></audio>
   <script>
+    $('.trigger').click(function() {
+      $(this).toggleClass('active')
+      $('.modal-gnb').fadeToggle()
+    })
+
+    var bgm = document.getElementById('audio')
+    bgm.volume = 0
 
   </script>
 </body>
