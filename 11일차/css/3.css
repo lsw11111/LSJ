@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: pink;
+}
+
+.slider {
+  width: 800px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+.slider div {
+  background-color: gray;
+  border: 1px solid black;
+  height: 300px;
+  border: 1px solid blue;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .slider {
+    width: 100%;
+  }
+}

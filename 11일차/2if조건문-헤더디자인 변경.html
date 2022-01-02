@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/2.css">
+  <script src="/script/jquery-3.6.0.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="lnb-inner">lnb</div>
+      <div class="gnb-inner">gnb</div>
+    </header>
+    <section>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa incidunt nihil enim alias pariatur neque deleniti culpa blanditiis provident, dicta vero, possimus eaque praesentium cumque nostrum et. Asperiores quidem soluta quam atque sapiente et! Quos magni tempora cumque architecto quasi, adipisci amet dignissimos dolore minus non quod itaque optio. Veritatis delectus ab quae. Cupiditate fugit magnam perferendis aut dolor ab voluptas itaque similique, quo natus veniam quos sint laborum neque rem nihil enim accusamus quae distinctio odio. Atque quaerat aut praesentium aspernatur architecto exercitationem nulla tempore velit quasi mollitia ipsa earum, labore maxime voluptatum, dolore eligendi ab beatae perferendis! Ut.
+      </p>
+    </section>
+
+    <a class="btn-top" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+
+  </div>
+
+  <script>
+    $(window).scroll(function() {
+      if($(window).scrollTop() > 50) {
+        $('header, .btn-top').addClass('active')
+      } else {
+        $('header, .btn-top').removeClass('active')
+      }
+      
+
+    })
+
+  </script>
+</body>
+</html>
