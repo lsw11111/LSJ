@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/4.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="/script/jquery-3.6.0.js"></script>
+  <script src="/script/wow.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>스크롤 리빌 애니메이션</h1>
+  <img src="http://placehold.it/800x1500">
+  <div class="parent">
+    <div class="wow ltr left">left</div>
+    <div class="wow rtl right">right</div>
+  </div>
+  <img src="http://placehold.it/800x500">
+  <div class="parent">
+    <div class="wow ltr left">left</div>
+    <div class="wow rtl right">right</div>
+  </div>
+  <div class="parent">
+    <div data-aos="fade-right" class="ltr left">left</div>
+    <div data-aos="fade-left" class="rtl right">right</div>
+    
+    
+  </div>
+  <script>
+    wow = new WOW({
+      boxClass: 'wow', // default
+      animateClass: 'animated', // default
+      offset: 100, // 딜레이 시간
+      mobile: true, // default
+      live: true // default
+    })
+    wow.init();
+    AOS.init();
+  </script>
+</body>
+
+</html>

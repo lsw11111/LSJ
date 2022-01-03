@@ -1,0 +1,24 @@
+body {
+  background-color: beige;
+}
+.icon-user {
+  filter: invert(59%) sepia(73%) saturate(2210%) hue-rotate(177deg) brightness(89%) contrast(93%);
+  width: 100px;
+  height: 100px;
+}
+.youtube {
+  filter: invert(18%) sepia(66%) saturate(4803%) hue-rotate(258deg) brightness(81%) contrast(99%);
+  
+}
+.mask-icon {
+  width: 200px;
+  height: 200px;
+  filter: invert(47%) sepia(38%) saturate(5720%) hue-rotate(335deg) brightness(101%) contrast(85%);
+}
+/* 그라데이션이 있는 이미지는 제대로 적용이 안됨
+단색은 적용됨 */
+.download {
+  width: 100px;
+  height: 100px;
+  filter: invert(100%) sepia(42%) saturate(3879%) hue-rotate(325deg) brightness(122%) contrast(72%);
+}

@@ -1,0 +1,14 @@
+.parent {
+  border: 5px solid black;
+  width: 800px;
+  display: flex;
+}
+.child1, .child2 {
+  border: 5px solid red;
+  height: 150px;
+  flex: 1;
+}
+.child1 {
+  order: 2;
+}
+.child2 {}

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+/* 기본세팅 */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+/* 레이아웃, 디자인 */
+section {
+  display: flex;
+  justify-content: center;
+}
+.inner {
+  width: 1200px;
+}
+.inner h1 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 15px;
+}
+.items {
+  display: flex;
+  gap: 40px;
+}
+.item {
+  flex: 1;  
+}
+.item-list {
+  text-align: center;
+  color: white;
+  padding: 25px;
+}
+.item:nth-of-type(1) .item-list {
+  background-color: dodgerblue;
+}
+.item:nth-of-type(2) .item-list {
+  background-color: #5049a9;
+}
+.item:nth-of-type(3) .item-list {
+  background-color: #8c66c1;
+}
+.item-list h4 {
+  margin-top: 0;
+}
+.item-list .btns .btn {
+  color: white;
+  background-color: black;
+  padding: 5px 20px;
+  border-radius: 3px;
+  margin: 5px;
+}
+.item-list .btns .btn.download {
+  padding: 5px 60px;
+}
+.item .item-desc {
+  padding: 5px 15px;
+  background-color: white;
+  
+}
+.item-desc p {
+  margin-top: 0;
+}
+.item:nth-of-type(1) .item-desc {
+  border: 3px solid dodgerblue;
+}
+.item:nth-of-type(2) .item-desc {
+  border: 3px solid #5049a9;
+}
+.item:nth-of-type(3) .item-desc {
+  border: 3px solid #8c66c1;
+}
+
+.item-desc ul {
+  background-color: #ddd;
+  margin: 0;
+  padding: 5px 15px;
+  margin-bottom: 15px;
+  
+}
+.item-desc ul li::before {
+  content: '- ';
+}
+
+/* 보이기 감추기 */
+.item {
+  position: relative;
+}
+.item-desc {
+  display: block;
+  position: absolute;
+  top: 143px;
+}

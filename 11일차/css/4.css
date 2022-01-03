@@ -1,0 +1,41 @@
+.parent {
+  border: 1px solid red;
+  width: 800px;
+  padding: 20px;
+  overflow: hidden;
+}
+.parent div {
+  float: left;
+  border: 1px solid red;
+  width: 50%;
+  height: 200px;
+  box-sizing: border-box;
+  font-size: 3em;
+  text-align: center;
+}
+.ltr {
+  animation: ltr 1s linear both;
+}
+.rtl {
+  animation: rtl 1s linear both;
+}
+@keyframes ltr {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+  @keyframes rtl {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

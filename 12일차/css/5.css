@@ -1,0 +1,21 @@
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+.close {
+  width: 30px;
+  height: 30px;
+  background-color: skyblue;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.522);
+}
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin-top: 30px;
+}
+.box::before {
+  content: '\e91c';
+  font-family: xeicon;
+}
+/* xeicon의 유니코드는 개발자 도구에서 찾음 */

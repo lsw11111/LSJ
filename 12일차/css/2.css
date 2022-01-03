@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6em;
+  font-size: 18px;
+}
+
+/* section : hero */
+.hero {
+  /* border: 1px solid red; */
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.528);
+}
+/*
+오버레이는 텍스트의 가독성을 높임. linearGradient를 쓸수도 있음 */
+/* .hero video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+} */
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* 위 주석처리한것과 같음 ie는 지원안함 */
+
+.hero .heading {
+  text-align: center;
+  width: 60%;
+  color: white;
+  
+}
+.heading h1 {
+  font-weight: 600;
+  line-height: 1.3em;
+  font-size: 1.5em
+}
+.heading h1 span {
+  color: crimson;
+  display: block;
+}
+
+
+/* section : content */
+.content {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+.content .inner {
+  width: 1280px;
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 70px;
+}

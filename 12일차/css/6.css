@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+@font-face {
+  font-family: 'OTWelcomeRA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'OTWelcomeRA';
+  font-weight: 300;
+}
+p span {
+  font-weight: 500;
+}
+input, button {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+/* form요소는 따로 폰트지정하거나 *에다가 지정 */
