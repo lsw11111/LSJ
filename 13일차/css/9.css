@@ -1,0 +1,110 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.content {
+  /* border: 1px solid red; */
+  width: 1100px;
+  text-align: center;
+
+}
+.items {
+  display: flex;
+  justify-content: space-between;
+}
+.item {
+  width: 340px;
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.282);
+  padding: 30px;
+  box-sizing: border-box;
+  color: white;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.item:before {
+  content: '';
+  position: absolute;
+  background-image: linear-gradient(-45deg, #ff084619 0%, #ffb199 100%);
+  width: 100%;
+  height: 42%;
+  left: 0;
+  bottom: 0;
+  transform: rotate(-10deg) scale(1.26);  
+}
+.item:nth-of-type(2):before {
+  background-image: linear-gradient(-45deg, #fa709a 0%, #fee140 100%);
+}
+.item:nth-of-type(3):before {
+  background-image: linear-gradient(-45deg, #30cfd0 0%, #330867 100%);
+}
+.item:nth-of-type(1) {
+  background-image: linear-gradient(45deg, #ff0844 0%, #ffb199 100%);
+}
+.item:nth-of-type(2) {
+  background-image: linear-gradient(45deg, #fa709a 0%, #fee140 100%);
+}
+.item:nth-of-type(3) {
+  background-image: linear-gradient(45deg, #30cfd0 0%, #330867 100%);
+}
+.item > .fas {
+  font-size: 60px;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.165);
+}
+.item:nth-of-type(1) > .fas {
+  background-image: linear-gradient(-45deg, #ff0844 0%, #ffb199 100%);
+}
+.item:nth-of-type(2) > .fas {
+  background-image: linear-gradient(-45deg, #fa709a 0%, #fee140 100%);
+  transform: rotate(-45deg);
+}
+.item:nth-of-type(3) > .fas {
+  background-image: linear-gradient(-45deg, #30cfd0 0%, #330867 100%);
+}
+.item h3 {
+  font-size: 28px;
+}
+.item h2 {
+  font-size: 40px;
+  position: relative;
+}
+.item ul {
+  text-align: left;
+  padding: 0;
+  margin-left: 80px;
+  position: relative;
+}
+.item .btn-order {
+  margin-top: 10px;
+  display: inline-block;
+  color: #000;
+  background-color: white;
+  padding: 7px 30px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.165);
+  position: relative;
+}
+.item:hover {
+  transform: scale(1.05);
+}
+.item .btn-order:hover {
+  background-color: black;
+  color: white;
+}

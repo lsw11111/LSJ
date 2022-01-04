@@ -1,0 +1,48 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.tooltip {
+  position: relative;
+}
+.fas {
+  color: royalblue;
+  font-family: fontawesome;
+  font-size: 50px;
+}
+.tooltip span {
+  position: absolute;
+  top: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  padding: 5px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+}
+
+.tooltip span::before {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  /* 반드시 같이 사용!! */
+  bottom: -5px;
+  background-color: black;
+}
+.tooltip:hover span {
+  opacity: 1;
+  visibility: visible;
+}
+

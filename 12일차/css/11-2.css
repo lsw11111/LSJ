@@ -96,7 +96,7 @@ section {
   position: relative;
 }
 .item-desc {
-  display: block;
+  display: none;
   position: absolute;
   top: 143px;
 }

@@ -1,0 +1,81 @@
+body {
+  
+  margin: 0;
+  padding: 0;
+}
+.frame {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.hexagon {
+  width: 400px;
+  height: 450px;
+  transition: 0.3s;
+  position: relative;
+}
+.shape {
+  clip-path: polygon(50% 0, 100% 30%, 100% 70%, 50% 100%, 0 70%, 0 30%);
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  overflow: hidden;
+}
+.shape img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: center;
+}
+.hexagon:nth-of-type(1) img {
+  object-position: right;
+}
+.hexagon .caption {
+  position: absolute;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  height: 100%;
+  opacity: 0;
+  transition: 0.3s;
+  transform: translateY(20px);
+}
+.hexagon .caption h2 {
+  font-size: 2em;
+}
+.hexagon:nth-of-type(1) .caption {
+  background: linear-gradient(to top, crimson, transparent);
+}
+.hexagon:nth-of-type(2) .caption {
+  background: linear-gradient(to top, royalblue, transparent);
+}
+.hexagon:nth-of-type(3) .caption {
+  background: linear-gradient(to top, yellowgreen, transparent);
+}
+.hexagon:hover .caption {
+  opacity: 1;
+  transform: translateY(0);
+
+}
+.hexagon:hover {
+  transform: translateY(-60px);
+}
+.hexagon::before {
+  content: '';
+  position: absolute;
+  width: inherit;
+  height: 60px;
+  background-color: #000;
+  background: radial-gradient(rgba(0, 0, 0, 0.377), transparent, transparent);
+  bottom: -70px;
+  transition: 0.3s;
+}
+.hexagon:hover::before {
+  opacity: 0.6;
+  bottom: -130px;
+}

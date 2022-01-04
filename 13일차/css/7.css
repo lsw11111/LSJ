@@ -1,0 +1,65 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: darkgray;
+  margin: 0;
+  padding: 0;
+}
+.frame {
+  width: 600px;
+  text-align: center;
+  background-color: white;
+  padding-bottom: 20px;
+}
+a {
+  text-decoration: none;
+}
+.frame h1 {
+  font-size: 36px;
+}
+.frame p {
+  font-size: 18px;
+  color: #aaa;
+  margin-bottom: 30px;
+}
+.btns {
+  margin-bottom: 10px;
+}
+.btn {
+  display: inline-block;
+  padding: 7px 30px;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0 3px #ddd;
+  font-weight: 600;
+}
+.btn.download {
+  color: black;
+  box-shadow: 0 3px #ddd;
+  border: 1px solid darkgray;
+}
+.btn.checkout {
+  background-color: dodgerblue;
+  color: white;
+  box-shadow: 0 3px skyblue;
+}
+.links {
+  font-size: 14px;
+}
+.links span {
+  color: #aaa;
+}
+.links a {
+  color: royalblue;
+}
+.links a::before {
+  content: '|';
+  color: #bbb;
+  margin-right: 5px;
+}
+.links a:hover {
+  text-decoration: underline;
+}
