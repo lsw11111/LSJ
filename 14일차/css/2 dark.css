@@ -1,0 +1,183 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  line-height: 1.5em;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background: url(/image/svg-background.svg) no-repeat center center /cover;
+}
+a {
+  text-decoration: none;
+}
+.frame {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+    
+}
+.profile {
+  width: 320px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.398);
+  position: relative;
+  background-color: white;
+}
+.profile .face {
+  width: 120px;
+  height: 120px;
+  margin: auto;
+}
+.face {
+  position: relative;
+}
+.face img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.241);
+}
+.face .fas {
+  position: absolute;
+  right: 8px;
+  bottom: 5px;
+  font-size: 20px;
+  background-color: deepskyblue;
+  border-radius: 50%;
+  color: white;
+  padding: 3px;
+}
+.desc h1 {
+  font-weight: 300;
+  line-height: 1.05em;
+  margin: 0;
+  margin-top: 20px;
+}
+.desc h1 span {
+  display: block;
+  font-size: 14px;
+  color: #bbb;
+}
+.desc p {
+
+}
+.desc p span {
+  display: block;
+  color: royalblue;
+}
+.view-portfolio {
+  display: inline-block;
+  background-color: #00cec9;
+  color: white;
+  padding: 5px 30px;
+  font-size: 16px;
+  border-radius: 20px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+/* sns */
+.sns {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid darkgray;
+  padding-top: 20px;
+}
+.sns .icon {
+
+}
+.sns .icon i {
+  color: white;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 2.5em;
+  border-radius: 50%;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.556);
+}
+.icon:nth-of-type(1) i {
+  background-image: linear-gradient(90deg, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+}
+.icon:nth-of-type(2) i {
+  background-image: linear-gradient(90deg, #fa709a 0%, #fee140 100%);
+}
+.icon:nth-of-type(3) i {
+  background-image: linear-gradient(90deg, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+}
+.sns .icon span {
+  font-size: 13px;
+  color: #aaa;
+}
+.sns .icon span big {
+  margin-top: 10px;
+  display: block;
+  font-size: 22px;
+  color: black;
+  font-weight: 500;
+}
+/* Top button */
+.btn-mode {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 23px;
+}
+.btn-mode::before{
+  content: '\eb0f';
+  cursor: pointer;
+  font-family: xeicon;
+}
+
+.like-more {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+}
+.btn-like {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.btn-like::before {
+  content: '\f08a';
+  font-family: fontawesome;
+  padding-right: 5px;
+}
+.btn-more {
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 10px;
+}
+/* dark mode */
+.profile.dark {
+  background-color: #323650;
+}
+.profile.dark .btn-mode {
+  color: white;
+}
+.profile.dark .like-more {
+  color: white;
+}
+.profile.dark .desc h1 {
+  color: white;
+}
+.profile.dark .desc p {
+  color: white;
+  font-weight: 400;
+}
+.profile.dark .icon span big {
+  color: white;
+}
+

@@ -1,0 +1,183 @@
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(/image/background.png) ;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+  color: #333;
+}
+a {
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+.login {
+  background-color: white;
+  border-radius: 10px;
+  width: 430px;
+  padding: 50px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.296);
+}
+.login h1 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 50px;
+}
+.login .field {
+  display: block;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.login input[type=email],
+.login input[type=password] {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  padding: 12px 0;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding-left: 25px;
+}
+.login input[type=email] {
+  background: url(/image/icon-user.png) no-repeat center left 3px; 
+}
+.login input[type=password] {
+  background: url(/image/icon-password.png) no-repeat center left 3px;
+}
+.login input[type=email]::placeholder
+.login input[type=password]::placeholder {
+  font-size: 14px;
+}
+.login input[type=email]:focus::placeholder {
+  visibility: hidden;
+}
+.login input[type=password]:focus::placeholder {
+  visibility: hidden;
+}
+.save-info {
+  margin-top: 5px;
+}
+.save-info input[type=checkbox] {
+  display: none;
+}
+.save-info label em {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+  background: url(/image/icon-checkbox.png) no-repeat center left;
+}
+.save-info input[type=checkbox]:checked ~ label em {
+  background: url(/image/icon-checkbox.png) no-repeat center right 2px;
+
+}
+.event-info input[name=event] {
+  display: none;
+}
+.event-info label em {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(/image/icon-radio.png) no-repeat center left;
+  vertical-align: top;
+}
+.event-info input[name=event]:checked + em {
+  background: url(/image/icon-radio.png) no-repeat center right;
+}
+.event-info label span {
+  display: inline-block;
+  margin-right: 10px;
+}
+.save-info a {
+  float: right;
+}
+.event-info {
+  margin-top: 15px;
+  text-align: center;
+}
+.event-info span {
+  display: block;
+}
+.event-info label {
+  
+}
+.login input[type=button] {
+  display: block;
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.sns-info {
+  text-align: center;
+}
+.sns-info span {
+  
+
+}
+.sns-info .sns {
+  margin-top: 10px;
+
+}
+.sns-info .sns a {
+  
+}
+.sns-info .sns a:hover i {
+  /* transform: rotateY(360deg); */
+}
+.sns-info .sns a i {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+  /* transition: 0.3s; */
+}
+.sns-info .sns a:nth-of-type(1) i {
+  background-color: #db4437;
+}
+.sns-info .sns a:nth-of-type(2) i {
+  background-color: #1877f2;
+}
+.sns-info .sns a:nth-of-type(3) i {
+  background-color: #3EAF0E;
+
+}
+.sns-info .sns a:nth-of-type(4) i {
+  background-color: #ffe812;
+  color: black;
+
+}
+.sign-up {
+  text-align: center;
+  margin-top: 15px;
+}
+.sign-up span {
+  display: block;
+}
+.sign-up a {
+  color: black;
+  font-weight: 500;
+}
+.sign-up a:hover {
+  text-decoration: underline;
+}

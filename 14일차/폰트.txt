@@ -1,0 +1,60 @@
+폰트어썸
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
+font-family: fontawesome; 꼭!
+
+XEicon
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+<i class=" "></i>
+font-family: xeicon;
+유니코드는 html로 불러온뒤 개발자도구로 열어보면 나옴
+
+노토산스
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+레일웨이
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+font-family: 'Raleway', sans-serif;
+
+몬트세랏
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+font-family: 'Montserrat', sans-serif;
+라토
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+font-family: 'Lato', sans-serif;
+로보토
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+font-family: 'Roboto', sans-serif;
+
+@font-face {
+  font-family: 'GmarketSansLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+<i class="fa-thin fa-envelope"></i>
+<i class="fa-solid fa-phone"></i>
+
+<i class="fab fa-facebook"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-google"></i>
+<i class="fab fa-linkedin-in"></i>
+<i class="fab fa-instagram"></i>
+
+<i class="fa-solid fa-check"></i>
+\f00c
+<i class="fa-solid fa-star"></i>
+
+<i class="fas fa-heart"></i>
+f004 꽉찬 하트
+<i class="far fa-heart"></i>
+f08a 빈 하트
+<i class="far fa-comment-dots"></i>
+댓글
+
+xeicon
+xi-google
+xi-facebook
+xi-naver
+xi-kakaotalk

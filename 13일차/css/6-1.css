@@ -60,7 +60,6 @@ body {
 .hexagon:hover .caption {
   opacity: 1;
   transform: translateY(0);
-
 }
 .hexagon:hover {
   transform: translateY(-60px);
@@ -71,7 +70,7 @@ body {
   width: inherit;
   height: 60px;
   background-color: #000;
-  background: radial-gradient(rgba(0, 0, 0, 0.377), transparent, transparent);
+  background: radial-gradient(rgba(0, 0, 0, 0.309), transparent, transparent);
   bottom: -70px;
   transition: 0.3s;
 }

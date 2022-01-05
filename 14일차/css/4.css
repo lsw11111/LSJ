@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+  body {
+  margin: 0;
+  padding: 0;
+  background-color: lightgray;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+}
+input, select {
+  cursor: pointer;
+}
+.member{
+  width: 460px;
+  margin: auto;
+  padding: 0 20px;
+}
+.member .logo {
+  display: block;
+  margin: 30px auto;
+}
+.field {
+  margin: 5px 0;
+}
+.field b {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+.member input:not(input[type=radio]), .field select {
+  border: 1px solid #dadada;
+  padding: 14px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+.field input:focus:not(input[type=radio]), .field select:focus {
+  border: 1px solid #2db400;
+}
+.field.birth div {
+  display: flex;
+  gap: 3px;
+}
+.field.tel-number div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  margin: 5px 0;
+}
+.field.tel-number div input[type=tel] {
+  flex: 2;
+}
+.field.tel-number div input[type=button] {
+  flex: 1;
+  background-color: #2db400;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+.field.tel-number div input[type=number] {
+  /* margin-top: -3px; */
+}
+input[type=submit] {
+  background-color: #2db400;
+  color: white;
+  font-size: 24px;
+}
+.field.gender div {
+  border: 1px solid #dadada;
+  width: 100%;
+  background-color: white;
+  padding: 14px 5px;
+}
+.field.gender input[type=radio] {
+  display: none;
+}
+.field.gender div label {
+  margin-right: 5px;
+  cursor: pointer;
+}
+.field.gender div em {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: top;
+  background: url(/image/icon-radio.png) no-repeat center left;
+}
+.field.gender input[type=radio]:checked + em {
+  background-position: center right;
+}
+.field .placehold-text {
+  display: block;
+  position: relative;
+}
+.placehold-text::after {
+  content: '@naver.com';
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  pointer-events: none;
+}
+.field:nth-of-type(2) input[type=password] {
+  background: white url(/image/icon-01.png) no-repeat center right 10px;
+  background-size: 20px;
+}
+.field:nth-of-type(3) input[type=password] {
+  background: white url(/image/icon-02.png) no-repeat center right 10px;
+  background-size: 20px;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* 위3개는 기본 셀렉트 아이콘 삭제 */
+  background: white url(/image/icon-select.png) no-repeat center right 10px;
+}
+input[type=number]::-webkit-outer-spin-button, 
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;  
+}
+.member-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+.member-footer a {
+  color: black;
+}
+.member-footer a:hover {
+  text-decoration: underline;
+  color: #2db400;
+}
+.member-footer div a:after {
+  content: '|';
+  display:inline-block;
+  margin: 0 5px;
+  color: #bbb;
+  transform: translateY(-2px);
+}
+.member-footer div a:last-of-type::after {
+  display: none;
+}
+@media (max-width:768px) {
+  .member {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
