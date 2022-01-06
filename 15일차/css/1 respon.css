@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+  .toggle {
+    top: 15px;
+    left: 15px;
+  }
+  .gnb {
+    font-size: 0.8em;
+  }
+  section {
+    height: 100%;
+  }
+  section .inner {
+    width: 100%;
+  }
+  .heading {
+    padding: 10px;
+  }
+  .heading h1 {
+    font-size: 2em;
+  }
+}

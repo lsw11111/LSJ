@@ -1,0 +1,125 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  
+}
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.5em;
+  font-size: 15px;
+  font-weight: 300;
+
+}
+a {
+  text-decoration: none;  
+}
+li {
+  list-style: none;
+}
+header {
+  height: 100px;
+  background-color: skyblue;
+  color: #000;
+  font-size: 2em;
+  text-align: center;
+  line-height: 100px;
+}
+section {
+  height: 500px;
+  color: #000;
+  font-size: 2em;
+  text-align: center;
+  line-height: 500px;
+}
+section:nth-of-type(odd) {
+  background-color: #ddd;
+}
+footer {
+  background-color: #37393d;
+  color: #999;
+  font-weight: 300;
+  padding: 30px 0;
+}
+.footer-inner {
+  width: 1280px;
+  margin: 0 auto;
+  /* overflow: hidden; */
+}
+.footer-inner:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* 위는 overflow:hidden 없이 부모요소의 h값을 찾는법 */
+.footer-inner em {
+  font-style: normal;
+  color: #555;
+  margin: 5px;
+}
+.copyright {
+  float: left;
+}
+.family {
+  float: right;
+  padding-top: 15px;
+}
+.policy {
+
+}
+.policy a {
+  color: white;
+}
+.policy a:first-child {
+  color: yellowgreen;
+}
+.policy a:hover {
+  text-decoration: underline;
+}
+/* 드롭다운 */
+.dropdown {
+  width: 200px;
+  color: #303135;
+  border: 1px solid #555;
+  cursor: pointer;
+  padding: 5px;
+  position: relative;
+}
+.dropdown .title {
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.3s;
+}
+.title:after {
+  content: '\f106';
+  font-family: fontawesome;
+  position: absolute;
+  right: 3px;
+}
+.title.active:after {
+  transform: rotate(180deg);
+}
+.dropdown .sub-menu {
+  position: absolute;
+  width: inherit;
+  left: 0;
+  bottom: 100%;
+  display: none;
+}
+.sub-menu li a {
+  color: white;
+  display: block;
+  padding: 5px;
+  background-color: gray;
+}
+.sub-menu li a:hover {
+  background-color: #333;
+}

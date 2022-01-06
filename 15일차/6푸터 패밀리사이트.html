@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/6.css">
+  <script src="/script/jquery-3.6.0.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>header</header>
+    <section>section#1</section>
+    <section>section#2</section>
+    <section>section#3</section>
+    <section>section#4</section>
+    <footer>
+      <div class="footer-inner">
+        <div class="copyright">
+          <div class="policy">
+            <a href="#">개인정보처리방침</a>
+            <em>|</em>
+            <a href="#">사이트맵</a>
+          </div>
+
+          <div class="info">
+            <span>인천광역시 중구 개항로 6층 (주)코딩웍스
+              <em>|</em>Tel. 032-850-4345, 4346<em>|</em>E-mail. codingworks@abcd.com
+            </span>
+            <p>
+              COPYRIGHT (C) CODINGWORKS COMPANY. ALL RIGHTS RESERVED.
+            </p>
+          </div>
+        </div>
+
+        <div class="family">
+          <div class="dropdown">
+            <div class="title">Family Site</div>
+            <ul class="sub-menu">
+              <li><a href="#none1">코딩웍스 인프런 강좌</a></li>
+              <li><a href="#none2">코딩웍스 퍼블리싱 블로그</a></li>
+              <li><a href="#none3">코딩웍스 퍼블리싱 유튜브</a></li>
+              <li><a href="#none4">인프런 홈페이지</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+<script>
+  $('.title').click(function(){ 
+    $('.dropdown .sub-menu').slideToggle()  
+  })
+  $('.title').click(function(){ 
+    $(this).toggleClass('active')
+  })
+  $('.sub-menu li').click(function() {
+    $(this).parent().slideUp()
+
+    var link = $(this).text()
+    $('.title').text(link)
+  })
+</script>
+</html>

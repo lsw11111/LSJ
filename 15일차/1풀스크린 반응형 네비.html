@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/1.css">
+  <link rel="stylesheet" href="/css/1 respon.css">
+  <script src="/script/jquery-3.6.0.js"></script>
+</head>
+<body>
+  <div class="toggle">
+    <i class="fas fa-plus"></i>
+  </div>
+  <div class="overlay"></div>
+  <ul class="gnb">
+    <li><a href="#feature1">Home</a></li>
+    <li><a href="#feature2">About</a></li>
+    <li><a href="#feature3">Graphic Portfolio</a></li>
+    <li><a href="#feature4">Web Portfolio</a></li>
+    <li><a href="#feature5">Contact</a></li>
+    <li><a href="#feature6">Epilogue</a></li>
+  </ul>
+
+  <div class="container">
+    <section class="wecome" id="feature1">
+      <img src="/images/bg-welcome.jpg" alt="">
+    </section>
+    <section id="feature2">
+      <div class="inner">
+        <div class="heading">
+          <b>Lorem ipsum dolor sit amet.</b>
+        <h1>Section : About</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia tenetur enim beatae odio voluptatibus? Accusamus, cumque. Voluptatibus magni cumque facere soluta dolorum dolor assumenda harum, minus, itaque accusamus iure alias expedita quas inventore accusantium dolores et ea? Eum velit voluptatum, quia vel sunt nihil veritatis neque consequuntur officiis odio tempora totam vero tempore temporibus unde harum, mollitia incidunt quaerat rem rerum repellat. Magnam doloribus voluptates quaerat unde eveniet deserunt, veritatis voluptate quia numquam aspernatur sed qui nulla animi ab et! Provident labore tempora ex officia sequi ea ad repudiandae enim fugiat repellendus fuga corporis, accusamus molestiae ab asperiores esse neque.
+        </p>
+        </div>
+      </div>
+    </section>
+    <section id="feature3">
+      <div class="inner">
+        <div class="heading">
+          <b>Lorem ipsum dolor sit amet.</b>
+          <h1>Section : Graphic Portfolio</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia tenetur enim beatae odio voluptatibus? Accusamus, cumque. Voluptatibus magni cumque facere soluta dolorum dolor assumenda harum, minus, itaque accusamus iure alias expedita quas inventore accusantium dolores et ea? Eum velit voluptatum, quia vel sunt nihil veritatis neque consequuntur officiis odio tempora totam vero tempore temporibus unde harum, mollitia incidunt quaerat rem rerum repellat. Magnam doloribus voluptates quaerat unde eveniet deserunt, veritatis voluptate quia numquam aspernatur sed qui nulla animi ab et! Provident labore tempora ex officia sequi ea ad repudiandae enim fugiat repellendus fuga corporis, accusamus molestiae ab asperiores esse neque.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="feature4">
+      <div class="inner">
+        <div class="heading">
+          <b>Lorem ipsum dolor sit amet.</b>
+          <h1>Web Portfolio</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia tenetur enim beatae odio voluptatibus? Accusamus, cumque. Voluptatibus magni cumque facere soluta dolorum dolor assumenda harum, minus, itaque accusamus iure alias expedita quas inventore accusantium dolores et ea? Eum velit voluptatum, quia vel sunt nihil veritatis neque consequuntur officiis odio tempora totam vero tempore temporibus unde harum, mollitia incidunt quaerat rem rerum repellat. Magnam doloribus voluptates quaerat unde eveniet deserunt, veritatis voluptate quia numquam aspernatur sed qui nulla animi ab et! Provident labore tempora ex officia sequi ea ad repudiandae enim fugiat repellendus fuga corporis, accusamus molestiae ab asperiores esse neque.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="feature5">
+      <div class="inner">
+        <div class="heading">
+          <b>Lorem ipsum dolor sit amet.</b>
+          <h1>Section : Contact</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia tenetur enim beatae odio voluptatibus? Accusamus, cumque. Voluptatibus magni cumque facere soluta dolorum dolor assumenda harum, minus, itaque accusamus iure alias expedita quas inventore accusantium dolores et ea? Eum velit voluptatum, quia vel sunt nihil veritatis neque consequuntur officiis odio tempora totam vero tempore temporibus unde harum, mollitia incidunt quaerat rem rerum repellat. Magnam doloribus voluptates quaerat unde eveniet deserunt, veritatis voluptate quia numquam aspernatur sed qui nulla animi ab et! Provident labore tempora ex officia sequi ea ad repudiandae enim fugiat repellendus fuga corporis, accusamus molestiae ab asperiores esse neque.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="feature6">
+      <div class="inner">
+        <div class="heading">
+          <b>Lorem ipsum dolor sit amet.</b>
+          <h1>Section : Epilogue</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia tenetur enim beatae odio voluptatibus? Accusamus, cumque. Voluptatibus magni cumque facere soluta dolorum dolor assumenda harum, minus, itaque accusamus iure alias expedita quas inventore accusantium dolores et ea? Eum velit voluptatum, quia vel sunt nihil veritatis neque consequuntur officiis odio tempora totam vero tempore temporibus unde harum, mollitia incidunt quaerat rem rerum repellat. Magnam doloribus voluptates quaerat unde eveniet deserunt, veritatis voluptate quia numquam aspernatur sed qui nulla animi ab et! Provident labore tempora ex officia sequi ea ad repudiandae enim fugiat repellendus fuga corporis, accusamus molestiae ab asperiores esse neque.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+
+  <script>
+    $('.toggle').click(function(){ 
+      $(this).toggleClass('active')
+      $('.overlay').toggleClass('active')
+      $('.gnb').toggleClass('active')
+    })
+    $('.gnb li a').click(function() {
+      $('.toggle').removeClass('active')
+      $('.overlay').removeClass('active')
+      $('.gnb').removeClass('active')
+    })
+  </script>
+</body>
+</html>

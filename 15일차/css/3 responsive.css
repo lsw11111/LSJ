@@ -1,0 +1,31 @@
+/* 모바일 */
+@media (max-width: 768px) {
+  .items {
+    width: 100%;
+  }    
+  section.portfolio {
+    height: auto;
+    align-content: start;
+    padding: 20px;
+  }
+  .items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .headline-share h1 {
+    font-size: 33px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  aside.item,
+  .item.thum:last-of-type {
+    grid-column: span 2;
+  }
+}
+
+

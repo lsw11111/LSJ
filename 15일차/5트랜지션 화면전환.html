@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/5.css">
+  <script src="/script/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="open-navi">
+      <i class="xi-arrow-left"></i>
+    </div>
+    <div class="close-navi">
+      <i class="xi-arrow-right"></i>
+    </div>
+    <div class="front">
+      <img src="/images/temp-image-01.jpg" alt="">
+    </div>
+    <div class="back">
+      <img src="/images/temp-image-02.jpg" alt="">
+    </div>
+  </div>
+
+</body>
+<script>
+  $('.open-navi').click(function() {
+    $(this).addClass('active')
+    $('.close-navi').addClass('active')
+    $('.front').fadeOut()
+    $('.back').fadeIn()
+  })
+
+  $('.close-navi').click(function() {
+    $(this).removeClass('active')
+    $('.open-navi').removeClass('active')
+    $('.front').fadeIn()
+    $('.back').fadeOut()
+  })
+</script>
+
+</html>

@@ -1,0 +1,208 @@
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/* Header */
+header {
+  
+}
+/* 배너 */
+.banner-outer {
+  position: relative;
+  background: linear-gradient(to right, #00202B 50%, white 50%);
+}
+.banner-outer .banner {
+  width: 1450px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.banner-outer .banner img {
+}
+.banner-outer .banner .close-banner {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  font-size: 2em;
+  text-align: center;
+  cursor: pointer;
+  right: 10px;
+  color: #aaa;
+}
+/* LNB */
+.lnb-outer {
+  background-color: #e2edf8;
+}
+.lnb {
+  width: 1450px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.lnb-outer .logo {
+  
+}
+.lnb-nav a { 
+  color: black;
+}
+.lnb-nav a:after {
+  content: '|';
+  color: #aaa;
+  margin-left: 5px;
+}
+.lnb-nav a:hover {
+  color: royalblue;
+}
+.lnb-nav a:last-child::after {
+  display: none;
+}
+/* GNB */
+.gnb-outer {
+  background-color: #272c38;
+}
+.gnb-outer nav {
+  position: relative;
+  width: 1450px;
+  margin: auto;
+}
+.gnb {
+  
+  display: flex;
+}
+.gnb > li:not(.gnb li:last-child) {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid white;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+}
+.gnb li:last-child {
+  border-right: 1px solid white;
+  width: 50px;
+  position: relative;
+}
+
+.gnb li:first-child {
+  background-color: crimson;
+}
+.gnb li:last-child {
+  background-color: royalblue;
+  transition: 0.3s;
+  border-right: 0;
+
+}
+.gnb li > a {
+  color: white;
+  padding: 5px 10px;
+}
+.gnb li.active:last-child {
+  background-color: white;
+}
+.badge {
+  background-color: crimson;
+  font-style: normal;
+  font-size: 12px;
+  border-radius: 10px;
+  padding: 0 2px;
+}
+/* Section */
+
+/* 드롭다운 */
+.dropdown {
+  position: absolute;
+  width: 100%;
+  display: none;
+}
+.dropdown a {
+  background-color: white;
+  display: block;
+  color: black;
+  border-bottom: 1px solid #ddd;
+}
+.dropdown a:hover {
+  background-color: #bbb;
+}
+/* 드롭다운 전부열기 트리거 */
+.trigger {
+  /* border: 1px solid red; */
+  width: 25px;
+  height: 14px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  position: absolute;
+}
+.trigger span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition: 0.3s;
+}
+.trigger span:nth-of-type(1) {
+  top: 0;
+}
+.trigger span:nth-of-type(2) {
+  top: 50%;
+}
+.trigger span:nth-of-type(3) {
+  top: 100%;
+}
+.trigger.active span {
+  background-color: black;
+}
+.trigger.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 50%;
+}
+.trigger.active span:nth-child(2) {
+  opacity: 0;
+}
+.trigger.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 50%
+}
+/* 사이트맵 */
+.sitemap-outer {
+  background-color: white;
+  width: calc(100% - 1px);
+  margin: auto;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  padding: 30px 15px;
+  display: none;
+  margin-top: -10px;
+}
+.sitemap {
+  display: flex;
+}
+.sitemap div {
+  flex: 1;
+  line-height: 2em;
+}
+.sitemap div a {
+  display: block;
+}
+.sitemap div a:before {
+  content: '- ';
+}
+.sitemap div a:hover {
+  text-decoration: underline;
+}
+section img {
+  object-fit: cover;
+  
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .frame,
+    .btns {
+      text-align: center;
+    }
+    #greeting {
+      background-color: #ddd;
+      padding: 20px;
+      color: crimson;
+    }
+    #greeting.active {
+      background-color: crimson;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <h1 id="greeting">Good to see you</h1>
+  </div>
+  <div class="btns">
+    <button id="btn1" onclick="addClass();">클래스 추가</button>
+    <button id="btn2" onclick="removeClass();">클래스 제거</button>
+    <button id="btn3" onclick="toggleClass();">클래스 토글</button>
+    <button id="btn4">요소 내용변경</button>
+  </div>
+</body>
+<script>
+  var greetingEl = document.getElementById('greeting')
+
+  function addClass() {
+    greetingEl.classList.add('active')
+  }
+  function removeClass() {
+    greetingEl.classList.remove('active')
+  }
+  function toggleClass() {
+    greetingEl.classList.toggle('active')
+  }
+  function addClass() {
+    greetingEl.classList.add('active')
+  }
+  
+  var btnChange = document.getElementById('btn4')
+  btnChange.addEventListener('click', function() {
+    greetingEl.innerHTML = '클릭'
+  })
+
+</script>
+
+</html>

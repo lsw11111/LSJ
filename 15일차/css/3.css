@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;  
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5em;
+  color: #222;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+  font-weight: 500;
+}
+.font-noto {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+}
+
+
+section.portfolio {
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  background: url(/images/background.png) no-repeat top right;
+}
+/* 헤드라인 */
+.headline-share {
+  text-align: center;
+  margin-top: 30px;
+}
+.headline-share h1 {
+  font-size: 56px;
+  position: relative;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+.headline-share h1::before {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 80px;
+  background: linear-gradient(to right, #1f8de6, #5ed6fe);
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+/* 포트폴리오 - 어사이드 */
+.items {
+  width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+aside.item h2 {
+  font-size: 26px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+aside.item b {
+  color: crimson;
+
+}
+aside.item .portfolio-info {
+  margin-top: 20px;
+}
+aside.item .portfolio-info span {
+  display: list-item;
+  list-style: square;
+  margin-left: 20px;  
+}
+/* 포트폴리오- 포토부분 */
+.item.thum .photo {
+  height: 400px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.172);
+  border-radius: 15px;
+  transition: 2s;
+}
+/* 스프레드 레디어스:그림자 크기 -값주면 줄어듦 */
+.item.thum:nth-of-type(1) .photo {
+  background: url(/images/web-portfolio-01.jpg) no-repeat top center /cover;
+}
+.item.thum:nth-of-type(2) .photo {
+  background: url(/images/web-portfolio-02.jpg) no-repeat top center /cover;
+}
+.item.thum:nth-of-type(3) .photo {
+  background: url(/images/web-portfolio-03.jpg) no-repeat top center /cover;
+}
+.item.thum:hover .photo {
+  background-position: bottom;
+}
+.item.thum span {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+}
+.btn {
+  color: #fff;
+  
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+.btn.pc {
+  background-color: crimson;
+}
+.btn.mobile {
+  background-color: royalblue;
+
+}
