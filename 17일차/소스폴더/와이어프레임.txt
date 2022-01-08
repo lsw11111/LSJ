@@ -1,0 +1,16 @@
+section.faq
+	.innner
+		h1
+			article.accordion
+				.faq-title > i
+				.faq-content
+				.faq-title > i
+				.faq-content
+				.faq-title > i
+				.faq-content
+				.faq-title > i
+				.faq-content
+				.faq-title > i
+				.faq-content
+				.faq-title > i
+				.faq-content

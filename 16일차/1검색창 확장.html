@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="/script/jquery-3.6.0.js"></script>
+  <link rel="stylesheet" href="/css/1.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="/images/logo.png">
+      </div>
+      <div class="search">
+        <span class="clear">
+          <i class="xi-close-thin"></i>
+        </span>
+        <div class="icon">
+          <i class="xi-search"></i>
+        </div>
+        <div class="input-frame">
+          <input type="text" placeholder="Type Here" id="searchInput">
+        </div>
+      </div>
+    </header>
+    <section>
+      <h1>section #01</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi fuga, eligendi perferendis quaerat officiis
+        dignissimos sapiente quod repellat, voluptatem suscipit eius ratione mollitia ullam? Soluta natus voluptatum
+        reiciendis adipisci recusandae veritatis suscipit hic cum quas neque accusamus iusto perferendis eveniet a in
+        tempora amet, velit officia itaque, ratione corporis voluptates.
+      </p>
+    </section>
+    <section>
+      <h1>section #02</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, iure. Pariatur, facere magni eligendi porro
+        placeat mollitia aperiam assumenda numquam ullam ducimus neque rerum aut debitis voluptate dolor culpa aliquam!
+        Culpa, repudiandae esse. Eos voluptas ipsam commodi reprehenderit veniam necessitatibus harum incidunt nobis
+        ducimus unde, saepe laborum atque! Doloremque, corporis.
+      </p>
+    </section>
+  </div>
+</body>
+<script>
+  // $('.icon').click(function() {
+  //   $('.search').addClass('active')
+  // })
+  // $('.clear').click(function() {
+  //   $('.search').removeClass('active')
+  // })
+  var icon = document.querySelector('.icon'),
+      search = document.querySelector('.search'),
+      clear = document.querySelector('.clear'),
+      searchInput = document.getElementById('searchInput'),
+      section = document.getElementsByTagName('section');
+  
+  
+  icon.onclick = function() {
+    search.classList.toggle('active')
+  }  
+  clear.addEventListener('click', function() {
+    searchInput.value = '';
+  })
+
+  for (let i = 0; i < section.length; i++) {
+    section[i].onclick = function() {
+    search.classList.remove('active')
+  }
+  }
+
+
+  
+  
+</script>
+
+</html>

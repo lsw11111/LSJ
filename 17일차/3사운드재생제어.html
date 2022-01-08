@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/3.css">
+</head>
+
+<body>
+  <audio src="/images/dd.mp3" id="audio"></audio>
+  <div class="audio-spectrum">
+    <span style="height:40%"></span>
+    <span style="height:100%"></span>
+    <span style="height:70%"></span>
+    <span style="height:40%"></span>
+  </div>
+  <div class="player">
+    <h1>자바스크립트 사운드 재생 제어하기</h1>
+    <div class="btns">
+      <button id="btn-play">Play
+        <i class="fas fa-play"></i>
+      </button>
+      <button id="btn-stop">Stop
+        <i class="fas fa-stop"></i>
+      </button>
+    </div>
+  </div>
+</body>
+<script>
+  var audio = document.getElementById('audio'),
+      btnPlay = document.getElementById('btn-play'),
+      btnStop = document.getElementById('btn-stop'),
+      audioSpectrum = document.querySelector('.audio-spectrum'),
+      checkStatus = 0;
+  // input, button - class안됨.. id를 쓰자
+
+  var playToggle = function () {
+    if (checkStatus === 0) {
+      checkStatus = 1
+      audio.play()
+      btnPlay.innerHTML = 'Pause <i class="fas fa-pause"></i>'
+      audioSpectrum.classList.add('active')
+    } else {
+      checkStatus = 0;
+      audio.pause();
+      btnPlay.innerHTML = 'Play <i class="fas fa-play"></i>'
+      audioSpectrum.classList.remove('active')
+    }
+  }
+  var audioStop = function () {
+    checkStatus = 0;
+    audio.pause();
+    audio.currentTime = 0;
+    btnPlay.innerHTML = 'Play <i class="fas fa-play"></i>'
+    audioSpectrum.classList.remove('active')
+  }
+
+  btnPlay.addEventListener('click', playToggle)
+  btnStop.addEventListener('click', audioStop)
+</script>
+
+</html>

@@ -1,0 +1,88 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+body {  
+  line-height: 1.5em;
+  font-size: 15px;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a {
+  text-decoration: none;  
+}
+li {
+  list-style: none;
+}
+.player {
+  text-align: center;
+}
+.player h1 {
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: white;
+}
+.btns button {
+  background-color: #5E95EC;
+  color: white;
+  border: 0;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+.audio-spectrum {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.audio-spectrum span {
+  width: 2px;
+  background-color: yellowgreen;
+  margin: 0;
+  
+}
+.audio-spectrum.active span {
+  animation: audio-spectrum 0.35s linear infinite;
+}
+.audio-spectrum.active span:nth-child(1) {
+  animation-delay: 0s;
+}
+.audio-spectrum.active span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.audio-spectrum.active span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.audio-spectrum.active span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+@keyframes audio-spectrum {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 100%;
+  }
+  100% {
+    height: 20%;
+  }
+}

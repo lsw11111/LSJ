@@ -1,0 +1,14 @@
+.container
+	header
+		.logo > img
+		.search
+			span.clear > i
+			.icon > i
+			.input-frame
+				input[type=text]
+	section
+		h1
+		p	
+	section
+		h1
+		p			

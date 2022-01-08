@@ -1,0 +1,159 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+body {
+  background: url(/images/background.jpg) no-repeat center center;
+  background-attachment: fixed;
+  /* 꽉채움 */
+  line-height: 1.5em;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+body::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.515);
+  /* z-index: -111; */
+}
+a {
+  text-decoration: none;  
+}
+li {
+  list-style: none;
+  
+}
+.login {
+  position: relative;
+  padding: 50px;
+  width: 400px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.138);
+  border-radius: 15px;
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.172);
+  color: white;
+}
+/* 타이틀 */
+.login-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-title h1 {
+  margin-top: 15px;
+  color: white;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+}
+.login-title img {
+  width: 90px;
+  height: 90px;
+}
+/* 입력란 */
+.input-field {
+  position: relative;
+  
+}
+.input-field span {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  color: white;
+  pointer-events: none;
+  /* 마우스 이벤트 안받음 */
+  transition: 0.5s;
+}
+.input-field input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  color: white;
+  padding: 10px 0;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.input-field input:focus + span,
+.input-field input:valid + span {
+  top: -15px;
+  font-size: 14px;
+  color: yellow;
+  font-weight: bold;
+}
+/* 포커스+인풋 타입의 유효성이 맞았을때의 상태 */
+/* 위 경우는 이메일형식(***@***.***) */
+.btn-field {
+  text-align: center;
+}
+.input-field span.warning {
+  color: crimson !important;
+  animation: warning 0.3s ease-in-out 2;
+  top: -15px;
+}
+@keyframes warning {
+  0%, 100% {
+    transform: translateX(-5px);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+
+}
+.btn-field input {
+  background-color: yellowgreen;
+  border: 0;
+  width: 100%;
+  font-size: 18px;
+  padding: 10px 0;
+  color: white;
+  border-radius: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.add-info {
+  display: flex;
+  justify-content: space-between;
+}
+.add-info a {
+  color: black;
+  font-weight: 500;
+}
+.add-info input[type=checkbox] {
+  display: none;
+}
+.add-info input[type=checkbox]:checked + em {
+  background-position: right;
+}
+.add-info input[type=checkbox]:checked ~ span {
+  color: #1bbe93;
+}
+.add-info em {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(/images/icon-checkbox.png) no-repeat center left;
+  vertical-align: middle;
+  margin-right: 5px;
+}

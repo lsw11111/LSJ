@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/2.css">
+  <link rel="icon" href="/images/logo-favicon.png">
+  <script src="/script/jquery-3.6.0.js"></script>
+</head>
+<body>
+  <section class="login">
+    <div class="login-title">
+      <img src="/images/logo-favicon.png" alt="">
+      <h1>CodingWorks Login</h1>
+    </div>
+    <form>
+      <div class="input-field">
+        <input type="email" id="userid" autocomplete="off" required>
+        <span>USER EMAIL</span>
+      </div>
+      <div class="input-field">
+        <input type="password" id="userpw" required minlength="8" maxlength="12">
+        <span>PASSWORD</span>
+      </div>
+      <div class="btn-field">
+        <input type="submit" value="SIGN IN" id="login-btn">
+        <span></span>
+      </div>
+      <div class="add-info">
+        <label>
+          <input type="checkbox"><em></em>
+          <span>Save your Email?</span>
+        </label>
+        <a href="#">Forgot Password?</a>
+
+      </div>
+    </form>
+  </section>
+
+</body>
+<script>
+  var userId = $('#userid'),
+      userPw = $('#userpw'),
+      loginBtn = $('#login-btn');
+  
+  loginBtn.click(function() {
+    if(userId.val() == '') {
+      userId.next('span').addClass('warning');
+      setTimeout(function() {
+        userId.next('span').removeClass('warning')}, 1500
+      )
+    } else if (userPw.val() == '') {
+      userPw.next('span').addClass('warning');
+      setTimeout(function() {
+        userPw.next('span').removeClass('warning')}, 1500
+      )
+    }
+  })
+</script>
+
+</html>
