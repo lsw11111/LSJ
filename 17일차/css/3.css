@@ -53,6 +53,7 @@ li {
   left: 20px;
   display: flex;
   justify-content: space-between;
+  transform: rotate(180deg);
 }
 .audio-spectrum span {
   width: 2px;

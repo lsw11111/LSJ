@@ -1,0 +1,140 @@
+@media (max-width : 768px) {
+  body {
+    font-size: 16px;
+    padding: 3px;
+  }
+  .welcome h1 {
+    font-size: 30px;
+  }
+  .welcome h5 {
+    font-size: 16px;
+    padding: 0 60px;
+  }
+  .welcome p {
+    font-size: 14px;
+    padding: 0 36px;
+  }
+  .getStarted input[type=email] {
+    width: 200px;
+    
+  }
+  .getStarted button {
+    width: 90px;
+    font-size: 14px;
+  }
+  .inner {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .inner .preview img {
+  }
+  .inner .desc {
+    margin-top: 10px;
+  }
+  .inner .desc h2 {
+    font-size: 24px;
+  }
+  .tv .preview img {
+    width: 80%;
+    transform: translateX(30px);
+  }
+  .tv .preview video {
+    width: 60%;
+    top: 43px;
+    left: 66px;
+  }
+  .offline .inner .preview {
+    order: 2;
+  }
+  .offline .inner .preview img {
+    
+  }
+  .offline .desc {
+    margin-bottom: -50px;
+    z-index: 1;
+    
+  }
+  .watch .inner .device img {
+    width: 80%;
+    transform: translateX(30px);
+    
+
+  }
+  .watch .inner .device video {
+    width: 60%;
+    top: 15px;
+    left: 66px;
+  }
+  
+  .kids .preview img {
+    width: 97%;
+  }
+  .kids .desc {
+    margin-bottom: 10px;
+  }
+  .faq-inner {
+    margin: 0 auto;
+    width: 100%;  
+  }
+  .faq-inner h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .accordion {
+    margin: 50px 0;
+  }
+  .accordion label {
+    font-size: 14px;
+  }  
+  .accordion input[type=radio] {
+    display: none;
+  }
+  .accordion label {
+    width: 100%;
+  }
+  
+  .faq-inner aside p {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+  .footer-inner {
+    width: 100%;
+  }
+  footer {
+    padding: 5px;
+  }
+  .modal-login .login {
+    width: 90%;
+    padding: 30px;
+  }
+  .login-info a {
+    font-size: 12px;
+  }
+  .login-info label span {
+    font-size: 12px;
+  }
+  .login-footer a {
+    margin-bottom: 15px;
+    display: block;
+  }
+  .login-footer span {
+    display: block;
+  }
+  .login-footer p a {
+    display: block;
+  }
+  .accordion label:after {
+    content: '\e9af';
+    transform: rotate(-45deg);
+    font-family: xeicon;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}

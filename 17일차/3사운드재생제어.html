@@ -35,7 +35,6 @@
       btnStop = document.getElementById('btn-stop'),
       audioSpectrum = document.querySelector('.audio-spectrum'),
       checkStatus = 0;
-  // input, button - class안됨.. id를 쓰자
 
   var playToggle = function () {
     if (checkStatus === 0) {
@@ -60,6 +59,7 @@
 
   btnPlay.addEventListener('click', playToggle)
   btnStop.addEventListener('click', audioStop)
+  audio.onended = audioStop
 </script>
 
 </html>
