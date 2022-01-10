@@ -1,0 +1,140 @@
+@media(max-width: 768px) {
+  body {
+  }
+  /* 헤더 */
+  header {
+    width: 375px;
+    height: 65px;  
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.172);
+    position: fixed;
+    z-index: 10000;
+    background-color: white;
+  }
+  header .download.active {
+    transform: translateX(20px)
+  }
+  .statics {
+    display: none;
+  }
+  .heading {
+    width: 100%;
+    padding: 10px;
+  }
+  .heading h1 {
+    font-size: 26px;
+  }
+  /* 섹션 */
+  .common {
+    padding: 0;
+  }
+  .common h1 {
+    line-height: 1.2em;
+  }
+  .inner {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  .desc,
+  .photo {
+    width: 100%;
+  }
+  .desc {
+    text-align: center;
+    padding: 15px;
+  }
+  .desc img {
+    margin-bottom: -17px;
+  }
+  .desc h1 {
+    font-size: 30px;
+  }
+  .secure .photo {
+    order: 2;
+  }
+  /* 파란바탕 다운로드 권유창 */
+  .callaction {
+    background-image: url(/images/download-bg-mobile.svg);
+  }
+  .callaction-inner {
+    width: 100%;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .callaction-inner h1 {
+    font-size: 22px;
+  }
+  /* 푸터 */
+  .footer-iner {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .sns {
+    padding: 20px 10px;
+  }
+  /* 사이트맵 */
+  .items {
+    grid-template-columns: 1fr;
+  }
+  .item {
+    padding: 0 10px;
+
+  }
+  .item-title {
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+    pointer-events: all;
+  }
+  .item-title::after{
+    content: '\e941';
+    font-family: xeicon;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    transition: 0.2s;
+  }
+  .item-title.active::after {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  
+  .item-content {
+    display: none;
+    padding: 10px;
+  }
+
+/* 최하단 */
+
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  .footer-logo img {
+    transform: translateY(-5px);
+  }
+  .policy {
+    margin-right: 5px;
+    font-size: 14px;
+  }
+  .lang {
+    margin-top: 10px;
+  }
+  select {
+    padding: 0;
+  }
+
+
+
+
+}

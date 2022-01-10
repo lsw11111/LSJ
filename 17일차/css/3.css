@@ -61,22 +61,34 @@ li {
   margin: 0;
   
 }
-.audio-spectrum.active span {
-  animation: audio-spectrum 0.35s linear infinite;
-}
-.audio-spectrum.active span:nth-child(1) {
+.audio-spectrum.active span:nth-of-type(1) {
+  animation: audio-spectrum1 0.35s linear infinite;
   animation-delay: 0s;
 }
-.audio-spectrum.active span:nth-child(2) {
+.audio-spectrum.active span:nth-of-type(2) {
+  animation: audio-spectrum2 0.35s linear infinite;
   animation-delay: 0.2s;
 }
-.audio-spectrum.active span:nth-child(3) {
+.audio-spectrum.active span:nth-of-type(3) {
+  animation: audio-spectrum3 0.35s linear infinite;
   animation-delay: 0.4s;
 }
-.audio-spectrum.active span:nth-child(4) {
+.audio-spectrum.active span:nth-of-type(4) {
+  animation: audio-spectrum4 0.35s linear infinite;
   animation-delay: 0.6s;
 }
-@keyframes audio-spectrum {
+@keyframes audio-spectrum1 {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 40%;
+  }
+  100% {
+    height: 20%;
+  }
+}
+@keyframes audio-spectrum2 {
   0% {
     height: 0;
   }
@@ -85,5 +97,27 @@ li {
   }
   100% {
     height: 20%;
+  }
+}
+@keyframes audio-spectrum3 {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 70%;
+  }
+  100% {
+    height: 20%;
+  }
+}
+@keyframes audio-spectrum4 {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 40%;
+  }
+  100% {
+    height: 10%;
   }
 }
