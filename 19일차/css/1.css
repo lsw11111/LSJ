@@ -62,14 +62,17 @@ header .download.active {
   background: url(/images/hero-back-large-desktop.jpg) no-repeat center center ;
   height: 100vh;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  align-items: center;  
+  justify-content: center;  
   position: relative;
 }
 .heading {
   width: 630px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 .heading h1 {
   font-size: 52px;
@@ -96,15 +99,17 @@ header .download.active {
 }
 .next-section {
   position: absolute;
-  bottom: 55px;
+  bottom: 70px;
 }
 .next-section a {
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
   display: inline-block;
+  background-color: white;
   width: 60px;
   height: 60px;
   line-height: 60px;
   border-radius: 50%;
+  text-align: center;
   font-size: 26px;
   color: black;
   animation: next 0.6s linear infinite;
@@ -160,7 +165,7 @@ header .download.active {
   overflow: hidden;
 }
 .photo img {
-  object-fit: cover;  
+  object-fit: cover;
   
 }
 /* 개별 */

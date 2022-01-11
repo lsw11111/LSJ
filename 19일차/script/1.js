@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  // 스크롤시 다운로드창
+  // 스크롤시 다운로드 버튼
   $(window).scroll(function() {
     if($(window).scrollTop() > 500) {
       $('header .download').addClass('active')
@@ -7,6 +7,7 @@ $(document).ready(function() {
       $('header .download').removeClass('active')
     }
   })
+
   // 사이트맵 어코디언
   $('.item-title').click(function() {
     // $('.item-content').slideUp()
